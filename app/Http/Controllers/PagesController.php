@@ -14,4 +14,13 @@ class PagesController extends Controller
         return view('pages.about')->with('title', $title);
 
     }
+
+    // Dashboard Page Controller
+    public function dashboard(){
+
+        $title = 'Dashboard';
+
+        return view('pages.dashboard')->with('title', $title);
+
+    }
 }
