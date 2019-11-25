@@ -9,6 +9,9 @@
 
         <title>{{ config('app.name', 'Dino Sight') }}</title>
 
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     </head>
 
     <body>
