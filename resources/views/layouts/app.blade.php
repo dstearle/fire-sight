@@ -19,7 +19,7 @@
         <div id="app">
 
             {{-- Navbar --}}
-            {{-- @include('inc.navbar') --}}
+            @include('inc.navbar')
 
             <main class="container">
 
