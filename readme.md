@@ -1,12 +1,6 @@
-# shrimp-king
+# dino-sight
 
 <br>
-
-**What Is This Project? :**
-
-- Shrimp King is an ecommerce website sim where you can buy or sell fancy shrimp.
-
-
 
 **To Do List:**
 
