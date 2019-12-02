@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class PostsController extends Controller
 {
@@ -13,7 +14,11 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
+        // Same as above but with pagination (showing ten posts per page) and ordered by created_at in ascending order
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+
+        // The view that displays all of the posts
+        return view('posts.index')->with('posts', $posts);
     }
 
     /**
