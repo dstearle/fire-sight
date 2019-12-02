@@ -37,7 +37,7 @@
                             </h3>
         
                             {{-- Timestamp & Author --}}
-                            <small>Written on {{ $post->created_at }} by {{ $post->user->name}}</small>
+                            {{-- <small>Written on {{ $post->created_at }} by {{ $post->user->name}}</small> --}}
 
                         </div>
 
