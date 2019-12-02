@@ -38,6 +38,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/dashboard">Dashboard</a>
                 </li>
+
+                {{-- Sightings --}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/posts">Sightings</a>
+                </li>
     
             </ul>
 
