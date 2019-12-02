@@ -17,5 +17,5 @@ Route::get('/', 'PagesController@about');
 // About Page
 Route::get('/dashboard', 'PagesController@dashboard');
 
-// About Page
+// Sightings Page
 Route::resource('posts', 'PostsController');
