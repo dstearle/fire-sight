@@ -118,7 +118,19 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        // The variable that finds the id for the post from the database
+        $post = Post::find($id);
+
+        // Check for correct user
+        if(auth()->user()->id !== $post->user_id){
+
+            // If user is not authorized to edit the post redirect them back to viewing posts
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+
+        }
+
+        // The view for that post to be edited
+        return view('posts.edit')->with('post', $post);
     }
 
     /**
