@@ -103,7 +103,11 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        // The variable that finds the id for the post from the database
+        $post = Post::find($id);
+
+        // The view for that post
+        return view('posts.show')->with('post', $post);
     }
 
     /**
