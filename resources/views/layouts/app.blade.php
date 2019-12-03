@@ -23,6 +23,9 @@
 
             <main class="container">
 
+                {{-- Error Messages --}}
+                @include('inc.messages')
+
                 @yield('content')
                 
             </main>
