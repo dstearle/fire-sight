@@ -195,6 +195,27 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // The variable that finds the id for the post from the database
+        $post = Post::find($id);
+
+        // Check for correct user
+        if(auth()->user()->id !== $post->user_id){
+
+            // If user is not authorized to delete the post redirect them back to viewing posts
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+
+        }
+
+        // Deletes the image
+        if($post->cover_image != 'noimage.jpg'){
+
+            Storage::delete('public/cover_images/' . $post->cover_image);
+
+        }
+
+        // Deletes the post
+        $post->delete();
+
+        return redirect('/posts')->with('success', 'Post Deleted');
     }
 }
