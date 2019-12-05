@@ -13,9 +13,9 @@ class Post extends Model
     public $timestamps = true;
 
     // Relationship stating a single post belongs to one user
-    // public function user() {
+    public function user() {
 
-    //     return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User');
 
-    // }
+    }
 }
