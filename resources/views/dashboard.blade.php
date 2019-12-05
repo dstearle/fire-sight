@@ -28,7 +28,7 @@
                     <div class="row">
 
                         {{-- Table Title --}}
-                        <h3 class="col-8">Your Blog Posts</h3>
+                        <h3 class="col-8">Your Sightings</h3>
 
                         {{-- Create Posts Link --}}
                         <div class="col-4">
