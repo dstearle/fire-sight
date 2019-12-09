@@ -16,6 +16,11 @@ Route::get('/', 'PagesController@about');
 
 // Sightings Page
 Route::resource('posts', 'PostsController');
+
 Auth::routes();
 
+// Login & Register Page
+Route::get('/home', 'PagesController@index');
+
+// Dashboard Page
 Route::get('/dashboard', 'DashboardController@index');
