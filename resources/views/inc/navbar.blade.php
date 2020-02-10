@@ -49,27 +49,10 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
 
-                <!-- Authentication Links -->
+                <!-- For Guests -->
                 @guest
 
-                    {{-- Login --}}
-                    <li class="nav-item">
-
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-
-                    </li>
-
-                    {{-- Register --}}
-                    @if (Route::has('register'))
-
-                        <li class="nav-item">
-
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-
-                        </li>
-
-                    @endif
-
+                <!-- For Authenticated Users -->
                 @else
 
                     <li class="nav-item dropdown">
