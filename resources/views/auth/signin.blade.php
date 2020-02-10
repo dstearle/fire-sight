@@ -73,6 +73,8 @@
                 </div>
             </div>
 
+            <br>
+
             {{-- Registration --}}
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
