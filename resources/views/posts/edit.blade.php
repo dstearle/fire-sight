@@ -17,6 +17,14 @@
 
         </div>
 
+        {{-- Location --}}
+        <div class="form-group">
+
+            {{ Form::label('location', 'Location') }}
+            {{ Form::text('location', $post->location, ['class' => 'form-control', 'placeholder' => 'Location']) }}
+
+        </div>
+
         {{-- Text Area For Body --}}
         <div class="form-group">
 
