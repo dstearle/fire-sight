@@ -12,13 +12,20 @@
             {{-- Post Image --}}
             <img style="width: 100%" src="/storage/cover_images/{{ $post->cover_image}}" alt="">
 
+            {{-- Location --}}
+            <h3>
+                
+                <span class="badge badge-secondary">Location: {{ $post->location }}</span>
+            
+            </h3>
+
             {{-- Body --}}
             <div>{!! $post->body !!}</div>
 
             {{-- Timestamp & Author --}}
             <div>
 
-                <small>Written on {{ $post->created_at }} by {{ $post->user->name}}</small>
+                <small>Written on {{ $post->created_at }} by {{ $post->user->name }}</small>
 
             </div>
 
