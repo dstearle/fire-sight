@@ -35,9 +35,12 @@
                                 <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
         
                             </h3>
+
+                            {{-- Location --}}
+                            <h6>{{ $post->location }}</h6>
         
                             {{-- Timestamp & Author --}}
-                            {{-- <small>Written on {{ $post->created_at }} by {{ $post->user->name}}</small> --}}
+                            <small>Written on {{ $post->created_at }} by {{ $post->user->name}}</small>
 
                         </div>
 
