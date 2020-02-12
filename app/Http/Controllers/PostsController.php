@@ -50,6 +50,7 @@ class PostsController extends Controller
 
             'title' => 'required',
             'location' => 'required',
+            'auth_status_button' => 'required',
             'body' => 'required',
             'cover_image' => 'image|nullable|max:1999' // Optional ability to upload an image
 
@@ -88,6 +89,7 @@ class PostsController extends Controller
         // Input fields
         $post->title = $request->input('title');
         $post->location = $request->input('location');
+        $post->auth_status_button = $request->input('auth_status_button');
         $post->body = $request->input('body');
 
         // From auth
@@ -154,6 +156,7 @@ class PostsController extends Controller
 
             'title' => 'required',
             'location' => 'required',
+            'auth_status_button' => 'required',
             'body' => 'required'
 
         ]);
