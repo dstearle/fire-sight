@@ -25,6 +25,24 @@
 
         </div>
 
+        {{-- Authority Status --}}
+        <div class="form-group">
+
+            {{ Form::label('auth_status', 'Authority Status') }}
+
+            {{-- Status Options --}}
+            <div class="ml-3">
+
+                <div><small>{{ Form::radio('name', 'value') }} Unknown</small></div>
+
+                <div><small>{{ Form::radio('name', 'value') }} Contacted</small></div>
+                
+                <div><small>{{ Form::radio('name', 'value') }} On The Scene</small></div>
+
+            </div>
+
+        </div>
+
         {{-- Text Area For Body --}}
         <div class="form-group">
 
