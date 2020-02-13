@@ -19,6 +19,13 @@
             
             </h3>
 
+            {{-- Authorities Status --}}
+            <h3>
+                
+                <span class="badge badge-secondary">Authorities Status: {{ $post->auth_status_button }}</span>
+            
+            </h3>
+
             {{-- Body --}}
             <div>{!! $post->body !!}</div>
 
