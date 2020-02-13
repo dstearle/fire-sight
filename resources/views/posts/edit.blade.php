@@ -33,11 +33,11 @@
             {{-- Status Options --}}
             <div class="ml-3">
 
-                <div><small>{{ Form::radio('auth_status_button', 'unknown') }} Unknown</small></div>
+                <div><small>{{ Form::radio('auth_status_button', 'Unknown') }} Unknown</small></div>
 
-                <div><small>{{ Form::radio('auth_status_button', 'contacted') }} Contacted</small></div>
+                <div><small>{{ Form::radio('auth_status_button', 'Contacted') }} Contacted</small></div>
                 
-                <div><small>{{ Form::radio('auth_status_button', 'on_the_scene') }} On The Scene</small></div>
+                <div><small>{{ Form::radio('auth_status_button', 'On The Scene') }} On The Scene</small></div>
 
             </div>
 
