@@ -4,10 +4,10 @@
 
 **To Do List:**
 
-- Navbar: remove login/register
+- Navbar: settings for user
 - About Section: Import "About The Developer" section, general readme stuff
-- Dashboard Section: view for login and register for guests
-- Sightings: Add maps for posts, redesign posts
+- Dashboard Section: follow posts
+- Sightings: Add maps for posts, multiple images upload to post, discussion area, counter for images and discussion posts for post index
 - Misc:
 
 <br>
