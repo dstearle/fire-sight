@@ -37,7 +37,13 @@
                             </h3>
 
                             {{-- Location --}}
-                            <h6>{{ $post->location }}</h6>
+                            <h6>Location: {{ $post->location }}</h6>
+
+                            {{-- Fire Status --}}
+                            <h6>Fire Status: {{ $post->fire_status_button }}</h6>
+
+                            {{-- Authorities Status --}}
+                            <h6>Authorities Status: {{ $post->auth_status_button }}</h6>
         
                             {{-- Timestamp & Author --}}
                             <small>Written on {{ $post->created_at }} by {{ $post->user->name}}</small>
