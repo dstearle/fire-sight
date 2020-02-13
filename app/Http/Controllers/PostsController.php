@@ -50,6 +50,7 @@ class PostsController extends Controller
 
             'title' => 'required',
             'location' => 'required',
+            'fire_status_button' => 'required',
             'auth_status_button' => 'required',
             'body' => 'required',
             'cover_image' => 'image|nullable|max:1999' // Optional ability to upload an image
@@ -89,6 +90,7 @@ class PostsController extends Controller
         // Input fields
         $post->title = $request->input('title');
         $post->location = $request->input('location');
+        $post->fire_status_button = $request->input('fire_status_button');
         $post->auth_status_button = $request->input('auth_status_button');
         $post->body = $request->input('body');
 
@@ -156,6 +158,7 @@ class PostsController extends Controller
 
             'title' => 'required',
             'location' => 'required',
+            'fire_status_button' => 'required',
             'auth_status_button' => 'required',
             'body' => 'required'
 
@@ -187,6 +190,7 @@ class PostsController extends Controller
         // Input fields
         $post->title = $request->input('title');
         $post->location = $request->input('location');
+        $post->fire_status_button = $request->input('fire_status_button');
         $post->auth_status_button = $request->input('auth_status_button');
         $post->body = $request->input('body');
         // Checks to see if a new image has been uploaded
