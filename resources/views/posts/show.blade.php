@@ -19,6 +19,13 @@
             
             </h3>
 
+            {{-- Fire Status --}}
+            <h3>
+                
+                <span class="badge badge-secondary">Fire Status: {{ $post->fire_status_button }}</span>
+            
+            </h3>
+
             {{-- Authorities Status --}}
             <h3>
                 
