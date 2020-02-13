@@ -25,6 +25,56 @@
 
         </div>
 
+        {{-- Fire Status --}}
+        <div class="form-group">
+
+            {{ Form::label('fire_status', 'Fire Status') }}
+
+            {{-- Status Options --}}
+            <div class="ml-3">
+
+                <div>
+                    
+                    <small>{{ Form::radio('fire_status_button', 'Smoke') }} Smoke</small>
+
+                    <small>(Ex: you can only see smoke)</small>
+                
+                </div>
+
+                <div>
+                    
+                    <small>{{ Form::radio('fire_status_button', 'Flame') }} Flame</small>
+
+                    <small>(Ex: from a large campfire to a burning car)</small>
+                
+                </div>
+                
+                <div>
+                    
+                    <small>{{ Form::radio('fire_status_button', 'Blaze') }} Blaze</small>
+
+                    <small>(Ex: an entire building)</small>
+                
+                </div>
+
+                <div>
+                    
+                    <small>{{ Form::radio('fire_status_button', 'Blaze') }} Wide Spread</small>
+
+                    <small>(Ex: a forest fire)</small>
+                
+                </div>
+
+                <div>
+                    
+                    <small>{{ Form::radio('fire_status_button', 'Extinguished') }} Extinguished</small>
+                
+                </div>
+
+            </div>
+
+        </div>
+
         {{-- Authority Status --}}
         <div class="form-group">
 
