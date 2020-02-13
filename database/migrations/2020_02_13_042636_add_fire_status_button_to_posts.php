@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddAuthStatusButtonToPosts extends Migration
+class AddFireStatusButtonToPosts extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddAuthStatusButtonToPosts extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-             // Adds column for authortities status
-             $table->string('auth_status_button');
+            // Adds column for fire status
+            $table->string('fire_status_button');
         });
     }
 
@@ -27,8 +27,8 @@ class AddAuthStatusButtonToPosts extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-            // Removes column for authorities status
-            $table->dropColumn('auth_status_button');
+            // Removes column for fire status
+            $table->dropColumn('fire_status_button');
         });
     }
 }
