@@ -84,6 +84,12 @@
 
         </div>
 
+        {{-- Shows the discussion posts for a post --}}
+        @include ('discposts.index', [
+            'discposts' => $post->discposts,
+            'discpostsCount' => $post->discposts_count,
+        ])
+
     </div>
 
 @endsection

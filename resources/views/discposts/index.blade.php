@@ -21,7 +21,7 @@
                     {{-- Populates the available discussion posts for a particular sighting --}}
                     @foreach ($discposts as $discpost)
 
-                        @include ('discposts.show')
+                        @include ('discposts.discpost')
 
                     @endforeach
 
