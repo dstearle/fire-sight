@@ -24,3 +24,6 @@ Route::get('/home', 'PagesController@index');
 
 // Dashboard Page
 Route::get('/dashboard', 'DashboardController@index');
+
+// Discussion Posts
+Route::resource('/posts.discposts', 'DiscPostsController')->except(['index', 'create', 'show']);

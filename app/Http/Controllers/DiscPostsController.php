@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+// Models
+use App\DiscPost;
+use App\Post;
+
 use Illuminate\Http\Request;
 
 class DiscPostsController extends Controller
