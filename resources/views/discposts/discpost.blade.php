@@ -1,6 +1,6 @@
 <div class="media-body">
 
-    {!! $answer->body_html !!}
+    {!! $discpost->body !!}
     
     <div class="row">
 
