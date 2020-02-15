@@ -18,4 +18,11 @@ class Post extends Model
         return $this->belongsTo('App\User');
 
     }
+
+    // Relation to discussion posts
+    public function discposts() {
+
+        return $this->hasMany(DiscPost::class);
+
+    }
 }
