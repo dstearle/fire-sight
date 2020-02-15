@@ -90,6 +90,9 @@
             'discpostsCount' => $post->discposts_count,
         ])
 
+        {{-- Shows the option to create a new answer brought from _create file --}}
+        @include ('discposts.create')
+
     </div>
 
 @endsection

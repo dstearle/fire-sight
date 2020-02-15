@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class DiscPost extends Model
 {
+    
+    public $fillable = ['body', 'user_id'];
+    
     // Relation to post
     public function post() {
 
