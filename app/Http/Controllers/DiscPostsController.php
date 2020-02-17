@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 // Models
-use App\DiscPost;
 use App\Post;
+use App\DiscPost;
 
 use Illuminate\Http\Request;
 
@@ -74,10 +74,15 @@ class DiscPostsController extends Controller
      */
     public function edit(Post $post, DiscPost $discpost)
     {
-        //
-        $this->authorize('update', $discpost);
+        // Check for correct user
+        if(auth()->user()->id !== $discpost->user_id){
 
-        return view('discpost.edit', compact('post', 'discpost'));
+            // If user is not authorized to edit the post redirect them back to viewing posts
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+
+        }
+
+        return view('discposts.edit', compact('post', 'discpost'));
     }
 
     /**
@@ -89,8 +94,13 @@ class DiscPostsController extends Controller
      */
     public function update(Request $request, Post $post, DiscPost $discpost)
     {
-        //
-        $this->authorize('update', $discpost);
+        // Check for correct user
+        if(auth()->user()->id !== $discpost->user_id){
+
+            // If user is not authorized to edit the post redirect them back to viewing posts
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+
+        }
 
         $discpost->update($request->validate([
 
@@ -98,7 +108,7 @@ class DiscPostsController extends Controller
 
         ]));
 
-        return redirect()->route('posts.show', $post->slug)->with('success', 'Your discussion post has been updated');
+        return redirect('/posts')->with('success', 'Post Updated');
     }
 
     /**
