@@ -34,6 +34,19 @@
 
                 @endcan
 
+                {{-- Prevents guests from seeing these buttons --}}
+                @if(!Auth::guest())
+
+                    {{-- Prevents users from editing/deleting other user's posts --}}
+                    @if(Auth::user()->id == $discpost->user_id)
+
+                        {{-- Edit Button --}}
+                        <a href="{{ $post->id }}/discposts/{{ $discpost->id }}/edit" class="btn btn-lg btn-success">Edit</a>
+
+                    @endif
+
+                @endif
+
             </div>
 
         </div>
