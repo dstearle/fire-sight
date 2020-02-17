@@ -119,8 +119,13 @@ class DiscPostsController extends Controller
      */
     public function destroy(Post $post, DiscPost $discpost)
     {
-        //Authorizes the user
-        $this->authorize('delete', $discpost);
+        // Check for correct user
+        if(auth()->user()->id !== $discpost->user_id){
+
+            // If user is not authorized to edit the post redirect them back to viewing posts
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+
+        }
 
         //Deletes the discpost
         $discpost->delete();

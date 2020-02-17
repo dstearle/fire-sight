@@ -43,6 +43,20 @@
                         {{-- Edit Button --}}
                         <a href="{{ $post->id }}/discposts/{{ $discpost->id }}/edit" class="btn btn-lg btn-success">Edit</a>
 
+                        {{-- Delete Button --}}
+                        <form class="form-delete" method="post" action="{{ route('posts.discposts.destroy', [$post->id, $discpost->id]) }}">
+
+                            @method('DELETE')
+                            @csrf
+    
+                            <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure?')">
+    
+                                Delete
+    
+                            </button>
+    
+                        </form>
+
                     @endif
 
                 @endif
