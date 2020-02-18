@@ -6,8 +6,8 @@
 
 - Navbar: settings for user
 - About Section: Import "About The Developer" section, general readme stuff
-- Dashboard Section: follow posts
-- Sightings: Add maps for posts, multiple images upload to post, discussion area, counter for images and discussion posts for post index
+- Dashboard Section: are for discussions
+- Sightings: Add maps for posts, multiple images upload to post, counter for images, style discussion submit and comments area
 - Misc:
 
 <br>
