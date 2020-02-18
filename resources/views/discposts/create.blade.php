@@ -6,9 +6,10 @@
 
             <div class="card-body">
 
+                {{-- Title --}}
                 <div class="card-title">
 
-                    <h3>Your Answer</h3>
+                    <h4>Add To The Discussion</h4>
 
                 </div>
 
@@ -18,9 +19,10 @@
 
                     @csrf
 
+                    {{-- Text Area --}}
                     <div class="form-group">
 
-                        <textarea class="form-control {{ $errors->has('body') ? 'is-invalid' : '' }}" rows="7" name="body"></textarea>
+                        <textarea class="form-control {{ $errors->has('body') ? 'is-invalid' : '' }}" rows="5" name="body"></textarea>
 
                         @if ($errors->has('body'))
 
@@ -34,9 +36,14 @@
 
                     </div>
 
+                    {{-- Submit Button --}}
                     <div class="form-group">
 
-                        <button type="submit" class="btn btn-lg btn-outline-primary">Submit</button>
+                        <div class="form-row justify-content-end">
+
+                            <button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
+
+                        </div>
 
                     </div>
 
