@@ -1,17 +1,32 @@
-<div>
+<div class="m-3">
     
     <div class="row">
 
         {{-- User --}}
-        <div class="col-4">
+        <div class="col-md-4 justify-content-center">
+
+            {{-- Profile Picture --}}
+            <div class="row justify-content-center">
+
+                <img 
+                    style="width: 6rem; height: 6rem; border-radius: 50%;" 
+                    src="/storage/profile_pictures/{{ $discpost->user->profile_picture }}" 
+                    alt=""
+                >
+
+            </div>
 
             {{-- User Name --}}
-            {!! $discpost->user->name !!}
+            <div class="row justify-content-center">
+
+                {!! $discpost->user->name !!}
+                
+            </div>
         
         </div>
 
         {{-- Body --}}
-        <div class="col-8">{!! $discpost->body !!}</div>
+        <div class="col-md-8">{!! $discpost->body !!}</div>
 
     </div>
     
@@ -44,6 +59,9 @@
             @endif
 
         @endif
+
+        {{-- Creation Date --}}
+        {{ \Carbon\Carbon::parse( $discpost->created_at)->format('m/d/Y')}}
 
     </div>
 

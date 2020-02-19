@@ -15,7 +15,7 @@ class AddProfilePictureToUsers extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             // Adds column for cover images
-            $table->string('profile_picture')->nullable();
+            $table->string('profile_picture')->default('user.jpg');
         });
     }
 
