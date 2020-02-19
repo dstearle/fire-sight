@@ -86,10 +86,15 @@
 
     </div>
 
-    {{-- Shows the option to create a new answer brought from _create file --}}
-    @include ('discposts.create')
+    {{-- Prevents guests from creating discussion posts --}}
+    @if(!Auth::guest())
+        
+        {{-- Create Discussion Posts --}}
+        @include ('discposts.create')
+
+    @endif
     
-    {{-- Shows the discussion posts for a post --}}
+    {{-- Shows the discussion posts for a sighting --}}
     @include ('discposts.index', [
         'discposts' => $post->discposts,
         'discpostsCount' => $post->discposts_count,
