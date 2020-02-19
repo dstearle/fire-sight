@@ -3,7 +3,12 @@
     <div class="row">
 
         {{-- User --}}
-        <div class="col-4">{!! $discpost->body !!}</div>
+        <div class="col-4">
+
+            {{-- User Name --}}
+            {!! $discpost->user->name !!}
+        
+        </div>
 
         {{-- Body --}}
         <div class="col-8">{!! $discpost->body !!}</div>
