@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddCoverImageToPosts extends Migration
+class AddProfilePictureToUsers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class AddCoverImageToPosts extends Migration
      */
     public function up()
     {
-        Schema::table('posts', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             // Adds column for cover images
-            $table->string('cover_image');
+            $table->string('profile_picture');
         });
     }
 
@@ -26,9 +26,9 @@ class AddCoverImageToPosts extends Migration
      */
     public function down()
     {
-        Schema::table('posts', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             // Removes column for cover images
-            $table->dropColumn('cover_image');
+            $table->dropColumn('profile_picture');
         });
     }
 }
