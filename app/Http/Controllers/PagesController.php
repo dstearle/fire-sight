@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class PagesController extends Controller
 {
@@ -18,9 +19,16 @@ class PagesController extends Controller
     // Settings Page Controller
     public function settings(){
 
-        $title = 'Settings';
+        // Checks to see if user is a guest
+        if(Auth::guest()) {
 
-        return view('pages.settings')->with('title', $title);
+            // Redirects guest to signin page
+            return view('auth.signin');
+
+        }
+
+        // If authenticated user, show them their settings page
+        return view('pages.settings', array('user' => Auth::user()));
 
     }
 
