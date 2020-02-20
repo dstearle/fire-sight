@@ -15,6 +15,15 @@ class PagesController extends Controller
 
     }
 
+    // Settings Page Controller
+    public function settings(){
+
+        $title = 'Settings';
+
+        return view('pages.settings')->with('title', $title);
+
+    }
+
     public function index(){
 
         $title = 'Welcome To Laravel';
