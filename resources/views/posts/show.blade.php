@@ -39,7 +39,21 @@
             {{-- Timestamp & Author --}}
             <div>
 
-                <small>Written on {{ $post->created_at }} by {{ $post->user->name }}</small>
+                <small>
+                    
+                    Sighted on {{ \Carbon\Carbon::parse( $post->created_at)->format('m/d/Y')}} by 
+                    
+                    {{-- Profile Picture --}}
+                    <img
+                        class="mr-1"
+                        style="width: 2rem; height: 2rem; border-radius: 50%;" 
+                        src="/storage/profile_pictures/{{ $post->user->profile_picture }}" 
+                        alt=""
+                    >
+
+                    {{ $post->user->name }}
+                
+                </small>
 
             </div>
 
