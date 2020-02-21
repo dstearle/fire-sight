@@ -68,6 +68,15 @@
                             v-pre
                         >
 
+                            {{-- Profile Picture --}}
+                            <img
+                                class="mr-1"
+                                style="width: 2rem; height: 2rem; border-radius: 50%;" 
+                                src="/storage/profile_pictures/{{ Auth::user()->profile_picture }}" 
+                                alt=""
+                            >
+
+                            {{-- User Name --}}
                             {{ Auth::user()->name }} <span class="caret"></span>
                             
                         </a>
