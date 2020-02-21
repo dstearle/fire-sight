@@ -17,6 +17,9 @@ Route::get('/', 'PagesController@about');
 // Sightings Page
 Route::resource('posts', 'PostsController');
 
+// Settings Page
+Route::resource('users', 'UsersController');
+
 Auth::routes();
 
 // Login & Register Page
