@@ -40,7 +40,7 @@ class UsersController extends Controller
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
 
             // Upload the image
-            $path = $request->file('profile_picture')->storeAs('public/profile_picture', $fileNameToStore);
+            $path = $request->file('profile_picture')->storeAs('public/profile_pictures', $fileNameToStore);
 
         }
 
