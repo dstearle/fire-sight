@@ -11,9 +11,16 @@
 
         <div class="col">
 
-            <div class="card">
+            <div class="card mb-5">
 
                 <div class="card-body">
+
+                    {{-- Profile --}}
+                    <div class="row">
+
+                        <h3 class="col-8 mb-3">Your Profile</h3>
+
+                    </div>
 
                     {{-- Form --}}
                     {{-- Note: This form comes from the LaravelCollective composer package --}}
@@ -35,15 +42,21 @@
 
                         </div>
 
-                        {{-- Upload Image --}}
+                        {{-- Profile Picture --}}
                         <div class="form-group">
 
-                            {{-- Profile Picture --}}
                             <div class="row justify-content-center">
 
                                 <div class="col">
 
-                                    <div class="row justify-content-center">
+                                    <div class="row mt-3 justify-content-center">
+
+                                        <h5><u>Your Profile Picture</u></h5>
+
+                                    </div>
+
+                                    {{-- Current rProfile Pictue --}}
+                                    <div class="row mt-3 mb-4 justify-content-center">
                                         
                                         <img
                                             style="width: 8rem; height: 8rem; border-radius: 50%;" 
@@ -53,7 +66,8 @@
 
                                     </div>
 
-                                    <div class="row justify-content-center">
+                                    {{-- File Input --}}
+                                    <div class="row mb-5 justify-content-center">
 
                                         {{ Form::file('profile_picture', ['class' => 'row ml-5']) }}
 
