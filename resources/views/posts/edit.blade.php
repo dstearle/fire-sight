@@ -111,7 +111,7 @@
         {{ Form::hidden('_method', 'PUT') }}
 
         {{-- Submit Button --}}
-        {{ Form::submit('Submit', ['class' => 'btn btn-lg btn-secondary']) }}
+        {{ Form::submit('Submit', ['class' => 'btn btn-lg btn-secondary mb-5']) }}
 
     {{ Form::close() }}
 
