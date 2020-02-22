@@ -55,7 +55,19 @@
 
                     <div class="text-center text-secondary">
 
-                        <p>Looks like no one has started a discussion yet. Be the first by submittig a question or comment above!</p>
+                        {{-- Message shown to guests --}}
+                        @if(Auth::guest())
+
+                            <p>Looks like no one has started a discussion yet. <a href="/dashboard">Login or register</a> to submit a question or comment!</p>
+
+                        @endif
+
+                        {{-- Message shown to authenticated users --}}
+                        @if(Auth::user())
+
+                            <p>Looks like no one has started a discussion yet. Be the first by submittig a question or comment above!</p>
+
+                        @endif
                         
                     </div>
 
