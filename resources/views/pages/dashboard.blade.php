@@ -43,53 +43,62 @@
                     @if(count($posts) > 0)
 
                         {{-- User's Posts Table --}}
-                        <table class="table table-striped">
+                        <div class="table-responsive">
 
-                            {{-- Table Headers --}}
-                            <tr>
+                            <table class="table table-striped">
 
-                                <th>Title</th>
-
-                                <th></th>
-
-                                <th></th>
-
-                            </tr>
-
-                            {{-- Foreach Loop --}}
-                            @foreach($posts as $post)
-
-                            <tr>
-
-                                {{-- Post Title --}}
-                                <td>{{ $post->title }}</td>
-
-                                {{-- Edit Post --}}
-                                <td>
+                                {{-- Table Headers --}}
+                                <tr>
+    
+                                    <th>Title</th>
+    
+                                    <th class="text-center">Discussion Posts</th>
+    
+                                    <th></th>
+    
+                                    <th></th>
+    
+                                </tr>
+    
+                                {{-- Foreach Loop --}}
+                                @foreach($posts as $post)
+    
+                                <tr>
+    
+                                    {{-- Post Title --}}
+                                    <td>{{ $post->title }}</td>
+    
+                                    {{-- Discussion Posts Count --}}
+                                    <td class="text-center">{{$post->discposts->count() }}</td>
+    
+                                    {{-- Edit Post --}}
+                                    <td>
+                                        
+                                        <a href="/posts/{{$post->id}}/edit" class="btn btn-block btn-secondary">Edit</a>
                                     
-                                    <a href="/posts/{{$post->id}}/edit" class="btn btn-block btn-secondary">Edit</a>
-                                
-                                </td>
+                                    </td>
+    
+                                    {{-- Delete Post --}}
+                                    <td>
+    
+                                        {{-- Delete Button --}}
+                                        {!! Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST']) !!}
+    
+                                            {{ Form::hidden('_method', 'DELETE') }}
+    
+                                            {{ Form::submit('Delete', ['class' => 'btn btn-block btn-danger']) }}
+    
+                                        {!! Form::close() !!}
+    
+                                    </td>
+    
+                                </tr>
+    
+                                @endforeach
+    
+                            </table>
 
-                                {{-- Delete Post --}}
-                                <td>
-
-                                    {{-- Delete Button --}}
-                                    {!! Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST']) !!}
-
-                                        {{ Form::hidden('_method', 'DELETE') }}
-
-                                        {{ Form::submit('Delete', ['class' => 'btn btn-block btn-danger']) }}
-
-                                    {!! Form::close() !!}
-
-                                </td>
-
-                            </tr>
-
-                            @endforeach
-
-                        </table>
+                        </div>
 
                     {{-- Else --}}
                     @else
