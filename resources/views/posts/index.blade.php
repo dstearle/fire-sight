@@ -3,12 +3,12 @@
 @section('content')
 
     {{-- Title --}}
-    <h1>Posts</h1>
+    <h1>Sightings</h1>
 
-    {{-- Checks if there are any posts to be shown --}}
+    {{-- Checks if there are any sightings to be shown --}}
     @if(count($posts) > 0)
 
-        {{-- Foreach loop for posts --}}
+        {{-- Foreach loop for sightings --}}
         @foreach($posts as $post)
 
             <div class="card my-2">
@@ -46,7 +46,26 @@
                             <h6>Authorities Status: {{ $post->auth_status_button }}</h6>
         
                             {{-- Timestamp & Author --}}
-                            <small>Written on {{ $post->created_at }} by {{ $post->user->name}}</small>
+                            <div>
+
+                                <small>
+                                    
+                                    Sighted on {{ \Carbon\Carbon::parse( $post->created_at)->format('m/d/Y')}} by 
+                                    
+                                    {{-- Profile Picture --}}
+                                    <img
+                                        class="mr-1"
+                                        style="width: 2rem; height: 2rem; border-radius: 50%;" 
+                                        src="/storage/profile_pictures/{{ $post->user->profile_picture }}" 
+                                        alt=""
+                                    >
+                
+                                    {{-- Author --}}
+                                    {{ $post->user->name }}
+                                
+                                </small>
+                
+                            </div>
 
                         </div>
 
@@ -61,10 +80,10 @@
         {{-- Pagination Links --}}
         {{ $posts->links() }}
 
-    {{-- If no posts are found inform user --}}
+    {{-- If no sightings are found inform user --}}
     @else
 
-        <p>No Posts Found</p>
+        <p>No sightings for selected area</p>
 
     @endif
 
