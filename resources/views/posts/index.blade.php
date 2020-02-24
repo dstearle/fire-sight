@@ -67,6 +67,9 @@
                 
                             </div>
 
+                            {{-- Discussion Posts Count --}}
+                            <h6>Discussion Posts: {{$post->discposts->count() }}</h6>
+
                         </div>
 
                     </div>
