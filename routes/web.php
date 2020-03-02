@@ -22,11 +22,8 @@ Route::resource('users', 'UsersController');
 
 Auth::routes();
 
-// Login & Register Page
-Route::get('/home', 'PagesController@index');
-
 // Settings Page
-Route::get('settings', 'PagesController@settings');
+Route::get('/settings', 'PagesController@settings');
 
 // Dashboard Page
 Route::get('/dashboard', 'DashboardController@index');
