@@ -1937,6 +1937,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1945,8 +1962,7 @@ __webpack_require__.r(__webpack_exports__);
     LMap: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LMap"],
     LTileLayer: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LTileLayer"],
     LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LMarker"],
-    LIcon: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LIcon"] // LTooltip
-
+    LIcon: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LIcon"]
   },
   data: function data() {
     return {
@@ -17215,6 +17231,39 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+
+/***/ "./node_modules/leaflet/dist/images/marker-icon-2x.png":
+/*!*************************************************************!*\
+  !*** ./node_modules/leaflet/dist/images/marker-icon-2x.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/leaflet/dist/marker-icon-2x.png?401d815dc206b8dc1b17cd0e37695975";
+
+/***/ }),
+
+/***/ "./node_modules/leaflet/dist/images/marker-icon.png":
+/*!**********************************************************!*\
+  !*** ./node_modules/leaflet/dist/images/marker-icon.png ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/leaflet/dist/marker-icon.png?2273e3d8ad9264b7daa5bdbf8e6b47f8";
+
+/***/ }),
+
+/***/ "./node_modules/leaflet/dist/images/marker-shadow.png":
+/*!************************************************************!*\
+  !*** ./node_modules/leaflet/dist/images/marker-shadow.png ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/leaflet/dist/marker-shadow.png?44a526eed258222515aa21eaffd14a96";
 
 /***/ }),
 
@@ -52089,7 +52138,30 @@ var render = function() {
         [
           _c("l-tile-layer", {
             attrs: { url: _vm.url, attribution: _vm.attribution }
-          })
+          }),
+          _vm._v(" "),
+          _c(
+            "l-marker",
+            { attrs: { "lat-lng": [33.143976, -117.336785], draggable: true } },
+            [
+              _c(
+                "l-icon",
+                {
+                  attrs: {
+                    "icon-anchor": _vm.staticAnchor,
+                    "class-name": "custom-div-icon"
+                  }
+                },
+                [
+                  _c("div", {
+                    staticClass: "marker-pin",
+                    staticStyle: { "background-color": "#ff922b" }
+                  })
+                ]
+              )
+            ],
+            1
+          )
         ],
         1
       )
@@ -76539,9 +76611,13 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! leaflet */ "./node_modules/leaflet/dist/leaflet-src.js");
+/* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -76559,7 +76635,15 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  */
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+// This needs to be at top of this file in order for icons to work properly
 
+
+delete leaflet__WEBPACK_IMPORTED_MODULE_0___default.a.Icon.Default.prototype._getIconUrl;
+leaflet__WEBPACK_IMPORTED_MODULE_0___default.a.Icon.Default.mergeOptions({
+  iconRetinaUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon-2x.png */ "./node_modules/leaflet/dist/images/marker-icon-2x.png"),
+  iconUrl: __webpack_require__(/*! leaflet/dist/images/marker-icon.png */ "./node_modules/leaflet/dist/images/marker-icon.png"),
+  shadowUrl: __webpack_require__(/*! leaflet/dist/images/marker-shadow.png */ "./node_modules/leaflet/dist/images/marker-shadow.png")
+});
 Vue.component('basic-map', __webpack_require__(/*! ./components/BasicMap.vue */ "./resources/js/components/BasicMap.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
