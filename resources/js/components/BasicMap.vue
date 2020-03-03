@@ -15,8 +15,25 @@
             :attribution="attribution"
             />
 
-            <!-- Default Icon -->
-            <!-- <l-marker :lat-lng="[37.52732, -119.278882]" /> -->
+            <!-- Marker -->
+            <l-marker 
+                :lat-lng="[33.143976, -117.336785]" 
+                :draggable="true"
+            >
+
+                <!-- Icon -->
+                <l-icon
+                :icon-anchor="staticAnchor"
+                class-name="custom-div-icon"
+                >
+
+                    <div style='background-color:#ff922b;' class='marker-pin'></div>
+                    
+                    <!-- <img :src= myIcon class="my-auto"> -->
+
+                </l-icon>
+
+            </l-marker>
 
         </l-map>
 
@@ -39,7 +56,6 @@
       LTileLayer,
       LMarker,
       LIcon,
-      // LTooltip
 
     },
 
