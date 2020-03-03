@@ -1,12 +1,12 @@
 <template>
 
-  <div style="height: 500px; width: 100%">
+  <div style="height: 400px; width: 100%">
 
         <!-- Leaflet Map -->
         <l-map
             :zoom="zoom"
             :center="center"
-            style="height: 80%"
+            style="height: 100%"
         >
 
             <!-- Tile Layer -->

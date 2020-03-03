@@ -52078,12 +52078,12 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticStyle: { height: "500px", width: "100%" } },
+    { staticStyle: { height: "400px", width: "100%" } },
     [
       _c(
         "l-map",
         {
-          staticStyle: { height: "80%" },
+          staticStyle: { height: "100%" },
           attrs: { zoom: _vm.zoom, center: _vm.center }
         },
         [
