@@ -26,7 +26,7 @@
         </div>
 
         {{-- Leaflet Map --}}
-        <basic-map></basic-map>
+        <basic-map class="form-group"></basic-map>
 
         {{-- Fire Status --}}
         <div class="form-group">
