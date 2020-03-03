@@ -25,6 +25,8 @@
 
         </div>
 
+        <example-component></example-component>
+
         {{-- Fire Status --}}
         <div class="form-group">
 
