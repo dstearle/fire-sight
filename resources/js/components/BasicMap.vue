@@ -27,9 +27,9 @@
                 class-name="custom-div-icon"
                 >
 
-                    <div style='background-color:#ff922b;' class='marker-pin'></div>
+                    <div style='background-color:#f76707;' class='marker-pin'></div>
                     
-                    <!-- <img :src= myIcon class="my-auto"> -->
+                    <img :src= myIcon class="my-auto">
 
                 </l-icon>
 
@@ -63,7 +63,7 @@
 
       return {
 
-        // myIcon: require("./../images/dinoIcon.png"),
+        myIcon: require("./../../../public/storage/icons/flame-icon.png"),
 
         // Zoom out
         zoom: 5,

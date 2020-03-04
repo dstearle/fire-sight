@@ -1966,7 +1966,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      // myIcon: require("./../images/dinoIcon.png"),
+      myIcon: __webpack_require__(/*! ./../../../public/storage/icons/flame-icon.png */ "./storage/app/public/icons/flame-icon.png"),
       // Zoom out
       zoom: 5,
       // Map location
@@ -52155,7 +52155,12 @@ var render = function() {
                 [
                   _c("div", {
                     staticClass: "marker-pin",
-                    staticStyle: { "background-color": "#ff922b" }
+                    staticStyle: { "background-color": "#f76707" }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "my-auto",
+                    attrs: { src: _vm.myIcon }
                   })
                 ]
               )
@@ -76797,6 +76802,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./storage/app/public/icons/flame-icon.png":
+/*!*************************************************!*\
+  !*** ./storage/app/public/icons/flame-icon.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/flame-icon.png?d4f853bea5881ef91bde948fe10874a8";
 
 /***/ }),
 
