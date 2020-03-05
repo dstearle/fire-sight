@@ -1954,6 +1954,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1982,6 +1984,12 @@ __webpack_require__.r(__webpack_exports__);
       staticAnchor: [16, 37],
       iconSize: 64
     };
+  },
+  methods: {
+    // Retrieves the latitude and longitude of the marker when moved
+    onDragEnd: function onDragEnd(event) {
+      console.log(this.$refs.marker.mapObject.getLatLng());
+    }
   }
 });
 
@@ -52142,7 +52150,11 @@ var render = function() {
           _vm._v(" "),
           _c(
             "l-marker",
-            { attrs: { "lat-lng": [33.143976, -117.336785], draggable: true } },
+            {
+              ref: "marker",
+              attrs: { "lat-lng": [33.143976, -117.336785], draggable: true },
+              on: { dragend: _vm.onDragEnd }
+            },
             [
               _c(
                 "l-icon",

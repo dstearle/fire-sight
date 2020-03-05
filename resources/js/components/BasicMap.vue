@@ -17,8 +17,10 @@
 
             <!-- Marker -->
             <l-marker 
+                ref="marker"
                 :lat-lng="[33.143976, -117.336785]" 
                 :draggable="true"
+                @dragend="onDragEnd"
             >
 
                 <!-- Icon -->
@@ -84,6 +86,13 @@
       };
 
     },
+
+    methods: {
+
+        // Retrieves the latitude and longitude of the marker when moved
+        onDragEnd(event) { console.log(this.$refs.marker.mapObject.getLatLng()) }
+
+    }
 
   };
 
