@@ -28,6 +28,14 @@
         {{-- Leaflet Map --}}
         <basic-map class="form-group"></basic-map>
 
+        {{-- Current Lattitude & Longitude --}}
+        <div class="form-group">
+
+            {{ Form::label('marker_latlng', 'Current Lattitude & Longitude') }}
+            {{ Form::text('marker_latlng', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...']) }}
+
+        </div>
+
         {{-- Fire Status --}}
         <div class="form-group">
 
