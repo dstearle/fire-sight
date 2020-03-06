@@ -28,11 +28,19 @@
         {{-- Leaflet Map --}}
         <basic-map class="form-group"></basic-map>
 
-        {{-- Current Lattitude & Longitude --}}
+        {{-- Current Lattitude --}}
         <div class="form-group">
 
-            {{ Form::label('marker_latlng', 'Current Lattitude & Longitude') }}
-            {{ Form::text('marker_latlng', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...']) }}
+            {{ Form::label('marker_latitude', 'Current Lattitude') }}
+            {{ Form::text('marker_latitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...']) }}
+
+        </div>
+
+        {{-- Current Longitude --}}
+        <div class="form-group">
+
+            {{ Form::label('marker_longitude', 'Current Longitude') }}
+            {{ Form::text('marker_longitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...']) }}
 
         </div>
 
