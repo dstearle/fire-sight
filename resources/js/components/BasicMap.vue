@@ -90,7 +90,15 @@
     methods: {
 
         // Retrieves the latitude and longitude of the marker when moved
-        onDragEnd(event) { console.log(this.$refs.marker.mapObject.getLatLng()) }
+        onDragEnd(event) { 
+            
+            console.log(this.$refs.marker.mapObject.getLatLng());
+
+            document.getElementById('marker_latitude').value = this.$refs.marker.mapObject.getLatLng().lat;
+
+            document.getElementById('marker_longitude').value = this.$refs.marker.mapObject.getLatLng().lng;
+            
+        }
 
     }
 
