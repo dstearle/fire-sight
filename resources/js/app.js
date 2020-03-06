@@ -29,7 +29,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
-Vue.component('basic-map', require('./components/BasicMap.vue').default);
+Vue.component('basic-map-input', require('./components/BasicMapInput.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
