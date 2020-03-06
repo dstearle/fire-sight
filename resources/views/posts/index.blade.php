@@ -17,17 +17,17 @@
 
                     <div class="row">
 
-                        {{-- Post Image --}}
-                        <div class="col-md-4 com-lg-4">
+                        {{-- Leaflet Map --}}
+                        <div class="col-md-6 col-lg-6">
 
-                            <img style="width: 100%" src="/storage/cover_images/{{ $post->cover_image}}" alt="Post Image">
+                            <basic-map-output style="height: 300px" :lat="{{ $post->marker_latitude }}" :lng="{{ $post->marker_longitude }}"></basic-map-output>
 
                         </div>
 
                         <br><br>
 
                         {{-- Post Title & Timestamp/Author --}}
-                        <div class="col-md-8 col-sm-8">
+                        <div class="col-md-6 col-sm-8">
 
                             {{-- Post Title --}}
                             <h3>

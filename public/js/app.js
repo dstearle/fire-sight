@@ -2067,9 +2067,9 @@ __webpack_require__.r(__webpack_exports__);
     return {
       myIcon: __webpack_require__(/*! ./../../../public/storage/icons/flame-icon.png */ "./storage/app/public/icons/flame-icon.png"),
       // Zoom out
-      zoom: 5,
+      zoom: 15,
       // Map location
-      center: Object(leaflet__WEBPACK_IMPORTED_MODULE_1__["latLng"])(37.52732, -119.278882),
+      center: Object(leaflet__WEBPACK_IMPORTED_MODULE_1__["latLng"])(this.lat, this.lng),
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       // Icon Properties
