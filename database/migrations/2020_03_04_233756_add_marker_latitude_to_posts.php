@@ -15,7 +15,7 @@ class AddMarkerLatitudeToPosts extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             // Adds column for marker latitude
-            $table->decimal('marker_latitude', 10, 6);
+            $table->decimal('marker_latitude', 18, 15);
         });
     }
 
