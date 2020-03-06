@@ -31,6 +31,8 @@ L.Icon.Default.mergeOptions({
 
 Vue.component('basic-map-input', require('./components/BasicMapInput.vue').default);
 
+Vue.component('basic-map-output', require('./components/BasicMapOutput.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
