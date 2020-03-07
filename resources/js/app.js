@@ -29,6 +29,13 @@ L.Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
+// ****** About Page ******
+
+// Portfolio Card
+Vue.component('portfolio-card', require('./components/about/PortfolioCard.vue').default);
+
+// ****** Leaflet Maps ******
+
 // Basic Map Input Component
 Vue.component('basic-map-input', require('./components/BasicMapInput.vue').default);
 
