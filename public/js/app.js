@@ -2313,52 +2313,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -6968,7 +6922,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nhr[data-v-10c893f0] {              \n    background-color: white;\n    height: 0.5px;\n}\n.about-card[data-v-10c893f0] {\n    background: rgba(0,0,0,0.6);\n}\n.about-ul[data-v-10c893f0] { -webkit-text-decoration: underline lightgreen; text-decoration: underline lightgreen;\n}\n.dash-ul[data-v-10c893f0] { -webkit-text-decoration: underline red; text-decoration: underline red;\n}\n.inventory-ul[data-v-10c893f0] { -webkit-text-decoration: underline yellow; text-decoration: underline yellow;\n}\n.market-ul[data-v-10c893f0] { -webkit-text-decoration: underline blue; text-decoration: underline blue;\n}\n", ""]);
+exports.push([module.i, "\nhr[data-v-10c893f0] {              \n    background-color: white;\n    height: 0.5px;\n}\n.about-card[data-v-10c893f0] {\n    background: rgba(0,0,0,0.6);\n}\n.about-ul[data-v-10c893f0] { -webkit-text-decoration: underline #F76707; text-decoration: underline #F76707;\n}\n.dash-ul[data-v-10c893f0] { -webkit-text-decoration: underline red; text-decoration: underline red;\n}\n.inventory-ul[data-v-10c893f0] { -webkit-text-decoration: underline yellow; text-decoration: underline yellow;\n}\n.market-ul[data-v-10c893f0] { -webkit-text-decoration: underline blue; text-decoration: underline blue;\n}\n", ""]);
 
 // exports
 
@@ -52955,7 +52909,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "my-5" }, [
       _c("h1", { staticClass: "text-white" }, [
-        _vm._v("Welcome To Shrimp King!")
+        _vm._v("Welcome To Fire Sight!")
       ]),
       _vm._v(" "),
       _c("hr", { staticClass: "my-3" }),
@@ -52970,7 +52924,13 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              '\n                            Shrimp King is an ecommerce website sim where you can buy or sell fancy shrimp.\n                            The main purpose of this project is to demonstrate my skills using Vuex.\n                            Vuex is a state management pattern tool for Vue.js just like React\'s "Redux" or Facebook\'s "Flux".\n                            With this very useful tool you can create a centralized store which can serve as the source of a state for data used across multiple components.\n\n                        '
+              "\n                            Fire Sight is an emergency response app where guests can register and login to report fires. \n                            Using the PHP framework Laravel and a Model View Controller approach (MVC) I have set up a system of authentication so that \n                            different types of users have access to different parts of the app. For instance an unregistered user can view sightings \n                            but only registered users are able to create posts. Although this project is mainly to demonstrate my capabilities with PHP and Laravel \n                            I am also using a Javascript library called "
+            ),
+            _c("a", { attrs: { href: "https://leafletjs.com/index.html" } }, [
+              _vm._v("Leaflets")
+            ]),
+            _vm._v(
+              " to generate the maps for sightings.\n\n                        "
             )
           ]),
           _vm._v(" "),
@@ -52980,7 +52940,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "\n                            At the top right of your screen you can see your funds. \n                            Go ahead and visit the market page and purchase whatever you can.\n                            Once you have made your purchases or if you would rather wait and see how the prices change head over to the Dashboard and end your day.\n                            Each day will randomize the prices and available quantities of shrimp available for sale on the market page (Note: some shrimp might not be available on certain days).\n                            The prices of shrimp you have purchased will match that current day's market price, so try to buy then sell high to gain a profit!\n                        "
+              "\n                            Feel free to register as a user on the Dashboard page if you havenot already and from there you can create new sightings or even comment other people's sightings.\n                            You do not need to be registered to view the Sightings page or individual posts for sightings but only to create, edit and delete sightings and discussion posts made by you.\n                        "
             )
           ])
         ])
@@ -53006,25 +52966,17 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "\n                            The dashboard page is where the user can save their current progress, load a previously saved game or end they fiscal day. \n                            Ending the day will randomize the prices and available quantities for shrimp in the market. \n                            The prices for shrimp you purchased in your inventory will also match their current market prices.\n                            The dashboard also showcases a line chart displaying the prices of favorited shrimp over a period of two weeks.\n                            Adding or removing shrimp to your favorites list will add or remove them from the chart regardless what page you are on.\n                        "
+              "\n                            The dashboard page is where the user can create new sightings or edit and delete previosly created ones.\n                        "
             )
           ]),
           _vm._v(" "),
           _c("h5", [
-            _c("u", { staticClass: "inventory-ul" }, [_vm._v("Inventory")])
+            _c("u", { staticClass: "inventory-ul" }, [_vm._v("Sightings")])
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "\n                            The inventory page allows you to sell shrimp you have purchased. \n                            The quantity for each shrimp will only change as you buy or sell more shrimp. The prices for the shrimp will match the current day's market price. \n                            So make sure to sell when the market price is higher than what you originally purchased.\n                        "
-            )
-          ]),
-          _vm._v(" "),
-          _c("h5", [_c("u", { staticClass: "market-ul" }, [_vm._v("Market")])]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n                            The market is where you may buy shirmp. \n                            Each day will have new prices and quantities. \n                            If you buy all of the available quantity for a particular shrimp its card will disappear until you either sell any amount of that type of shrimp or by ending the day (Note: Some shrimp might not always be available).\n                        "
+              "\n                            The sightings page is where you can view all currently reported sightings. \n                            At the top of the page is a large map displaying icons for the location of each sighting.\n                            Below is a listing of each individual sighting with a zoomed in version of its map location and other information posted with it.\n                            Clicking on sighting will take you to a thread for that sighting to view even more information. \n                            Registered users may post questions and comments for said sighting below.\n                        "
             )
           ])
         ])
@@ -53043,36 +52995,18 @@ var staticRenderFns = [
       _c("div", { staticClass: "card text-white about-card" }, [
         _c("div", { staticClass: "card-body" }, [
           _c("h5", [
-            _c("u", { staticClass: "about-ul" }, [
-              _vm._v("The Favorites System")
-            ])
+            _c("u", { staticClass: "about-ul" }, [_vm._v("Leaflet Maps")])
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              '\n                            When exploring your Inventory or the Market page you will notice a star in the upper right corner of the image for each item.\n                            This star allows the user to mark that item as "favorited" and will immeadiately remove said item from its current category and add it to the favorites list at the top (or vice versa if it is already favorited).\n                            Favoriting an item on any page will correlate across the pages. \n                            So if you favorite an item in your Inventory, said item will also be added to favorites on the Market page.\n                            This is because each item has a data object with a boolean of true or false.\n                            Through Vuex the boolean in said data object is toggled in the store so any page making use of the favorites system can correctly keep track of what items are currently being favorited.\n                            You are allowed to favorite up to six items, as you add items to your favorites list a counter showing your current amount of available slots will apear when you hover over the star icon.\n                            If your favorites list is full hovering over the star icon will inform you that you must remove items from favorites in order to add new ones.\n                        '
-            )
-          ]),
-          _vm._v(" "),
-          _c("h5", [
-            _c("u", { staticClass: "about-ul" }, [_vm._v("The Search Filter")])
-          ]),
-          _vm._v(" "),
-          _c("p", [
+              "\n                            One of the most important features used in this project are the maps used to display the reported fires.\n                            Using the open source Javascript library called "
+            ),
+            _c("a", { attrs: { href: "https://leafletjs.com/index.html" } }, [
+              _vm._v("Leaflets")
+            ]),
             _vm._v(
-              "\n                            Both the Inventory and Market pages feature a search filter at the top of the page. When you hover the tag icon for an item you will\n                            see a list of tags associated with that card. When a user types into or selects the input field for the search filter, a drop down list\n                            of available tags will apear. This list is populated by a function that searches through each item and brings back a set of unique tags.\n                            As long as the data supplied is formatted correctly, the search list will always bring back a list of available tags. When one or more tags are selected by the user, a filtered list \n                            will appear below the search filter showing all of items that contain all of those tags (but not limited to). The list will update whenever \n                            a tag is added or removed from the selected tags array which appears below the search filter after a selection is made.\n                        "
-            )
-          ]),
-          _vm._v(" "),
-          _c("h5", [
-            _c("u", { staticClass: "about-ul" }, [
-              _vm._v("The Dashboard Chart")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              '\n                            On the Dashboard page you will see a large chart I made using a package called Chart.js (documentation here https://www.chartjs.org/).\n                            Building off of the favorites system, this chart displays the prices for favorited items over a period of two weeks.\n                            The idea being that when you hit the "End Day" button above the chart you can immeadiately see the current day\'s prices (located on the far right of the chart) for any favorited items and decide if it is a good time to buy or sell.\n                            The chart is dynamic and will move older prices (the data being shown) and day labels (on the X axis) to the left to make room for new data.\n                            Hovering over the data points on the chart will also bring up "tooltips" to display the name and price of said item.\n\n                        '
+              " I was able to display the data stored into a database by registered users.\n                            In order to use this Javascript library in my PHP focused project I used the Javascript framework Vue.js that comes prepackaged with Laravel.\n                            By creating Vue components to hold the Javascript used to build my Maps I was able to integrate this feature where ever I needed such as blade files. \n                            In order to get the data need for the maps such as the latitude and longitude for plotting map markers it was as simple as passing it to the Vue components via props and Laravel Helpers.\n                        "
             )
           ])
         ])
