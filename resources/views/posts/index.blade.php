@@ -8,6 +8,16 @@
     {{-- Checks if there are any sightings to be shown --}}
     @if(count($posts) > 0)
 
+        {{-- Multi Marker Output --}}
+        <div class="row">
+
+            <multi-marker-output 
+                class="col"
+                :posts="{{ DB::table('posts')->get() }}"
+            ></multi-marker-output>
+
+        </div>
+
         {{-- Foreach loop for sightings --}}
         @foreach($posts as $post)
 
