@@ -31,6 +31,9 @@ L.Icon.Default.mergeOptions({
 
 // ****** About Page ******
 
+// About
+Vue.component('vue-about', require('./components/about/About.vue').default);
+
 // Portfolio Card
 Vue.component('portfolio-card', require('./components/about/PortfolioCard.vue').default);
 
