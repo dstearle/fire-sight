@@ -6987,7 +6987,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.leftRound[data-v-3d72cf4a] { border-radius: 150px 10px 150px 10px;\n}\n.portfolio-avatar[data-v-3d72cf4a] {\n    height: 250px;\n    width: 250px;\n    border-radius: 9999px;\n}\n", ""]);
+exports.push([module.i, "\n.bg-success[data-v-3d72cf4a] {background-color: #F76707 !important}\n.leftRound[data-v-3d72cf4a] { border-radius: 150px 10px 150px 10px;\n}\n.portfolio-avatar[data-v-3d72cf4a] {\n    height: 250px;\n    width: 250px;\n    border-radius: 9999px;\n}\n", ""]);
 
 // exports
 
@@ -53105,7 +53105,7 @@ var render = function() {
     _c("div", { staticClass: "card leftRound bg-success text-white" }, [
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-6 col-lg-4 align-self-center" }),
+          _vm._m(0),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-6 col-lg-8" }, [
             _c("h3", { staticClass: "d-none d-lg-block" }, [
@@ -53120,7 +53120,7 @@ var render = function() {
             _vm._v(" "),
             _c("p", { staticClass: "d-none d-lg-block" }, [
               _vm._v(
-                '\n                        Hi I am Dallas the author of "Shrimp King"!\n                        Interested in learning more about Shrimp King or seeing other projects I have worked on? \n                        This project along with many others can be found on my personal portfolio and github profile!\n                    '
+                '\n                        Hi I\'m Dallas, the developer of "Fire Sight"!\n                        Interested in learning more about Fire Sight or seeing other projects I have worked on? \n                        This project along with many others can be found on my personal portfolio and github profile!\n                    '
               )
             ]),
             _vm._v(" "),
@@ -53166,7 +53166,7 @@ var render = function() {
                       {
                         staticClass: "text-white pl-2",
                         attrs: {
-                          href: "https://github.com/dstearle/shrimp-king"
+                          href: "https://github.com/dstearle/fire-sight"
                         }
                       },
                       [_vm._v("project repo")]
@@ -53203,7 +53203,22 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6 col-lg-4 align-self-center" }, [
+      _c("img", {
+        staticClass: "portfolio-avatar",
+        attrs: {
+          src: __webpack_require__(/*! ./../../../../storage/app/public/dstearle.jpg */ "./storage/app/public/dstearle.jpg"),
+          alt: "Portfolio Picture"
+        }
+      })
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -78174,6 +78189,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./storage/app/public/dstearle.jpg":
+/*!*****************************************!*\
+  !*** ./storage/app/public/dstearle.jpg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/dstearle.jpg?dea88a56856fe4bf3e0c454e38c927fd";
 
 /***/ }),
 

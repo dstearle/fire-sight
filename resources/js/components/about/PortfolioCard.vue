@@ -13,11 +13,11 @@
                     <div class="col-md-6 col-lg-4 align-self-center">
 
                         <!-- Portfolio Image -->
-                        <!-- <img 
-                            src="./../../assets/images/dstearle.jpg" 
+                        <img 
+                            src="./../../../../storage/app/public/dstearle.jpg" 
                             class="portfolio-avatar" 
                             alt="Portfolio Picture"
-                        > -->
+                        >
 
                     </div>
 
@@ -31,8 +31,8 @@
                         <hr>
 
                         <p class="d-none d-lg-block">
-                            Hi I am Dallas the author of "Shrimp King"!
-                            Interested in learning more about Shrimp King or seeing other projects I have worked on? 
+                            Hi I'm Dallas, the developer of "Fire Sight"!
+                            Interested in learning more about Fire Sight or seeing other projects I have worked on? 
                             This project along with many others can be found on my personal portfolio and github profile!
                         </p>
 
@@ -59,7 +59,7 @@
                                     class="text-white"
                                 />
 
-                                <a class="text-white pl-2" href="https://github.com/dstearle/shrimp-king">project repo</a>
+                                <a class="text-white pl-2" href="https://github.com/dstearle/fire-sight">project repo</a>
 
                             </strong>
 
@@ -90,6 +90,7 @@
 </template>
 
 <style scoped>
+    .bg-success {background-color: #F76707 !important}
     .leftRound { border-radius: 150px 10px 150px 10px; }
     .portfolio-avatar {
         height: 250px;
