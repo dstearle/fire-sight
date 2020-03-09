@@ -27,7 +27,7 @@
                                 Fire Sight is an emergency response app where guests can register and login to report fires. 
                                 Using the PHP framework Laravel and a Model View Controller approach (MVC) I have set up a system of authentication so that 
                                 different types of users have access to different parts of the app. For instance an unregistered user can view sightings 
-                                but only registered users are able to create posts. Although this project is mainly to demonstrate my capabilities with PHP and Laravel 
+                                but only registered users are able to create posts. Although this project is mainly to demonstrate my capabilities with PHP and Laravel, 
                                 I am also using a Javascript library called <a href="https://leafletjs.com/index.html">Leaflets</a> to generate the maps for sightings.
 
                             </p>
@@ -58,14 +58,15 @@
                         <div class="card-body">
 
                             <!-- Dashboard Description -->
-                            <h5><u class="dash-ul">Dashboard</u></h5>
+                            <h5><u class="about-ul">Dashboard</u></h5>
 
                             <p>
-                                The dashboard page is where the user can create new sightings or edit and delete previosly created ones.
+                                For unrigestered users (guests) the dashboard is where you can either register yourself to become an authenticated user or login with your email and password. 
+                                Once registered or logged in, users can then use the dashboard to report new sightings or edit and delete previosly created ones.
                             </p>
 
-                            <!-- Inventory Description -->
-                            <h5><u class="inventory-ul">Sightings</u></h5>
+                            <!-- Sightings Description -->
+                            <h5><u class="about-ul">Sightings</u></h5>
 
                             <p>
                                 The sightings page is where you can view all currently reported sightings. 
@@ -92,7 +93,7 @@
 
                         <div class="card-body">
 
-                            <!-- Favorites System Description -->
+                            <!-- Leaflet Maps Description -->
                             <h5><u class="about-ul">Leaflet Maps</u></h5>
 
                             <p>
@@ -138,7 +139,4 @@
         background: rgba(0,0,0,0.6);
     }
     .about-ul { text-decoration: underline #F76707; }
-    .dash-ul { text-decoration: underline red; }
-    .inventory-ul { text-decoration: underline yellow; }
-    .market-ul { text-decoration: underline blue; }
 </style>
