@@ -2313,6 +2313,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -6922,7 +6923,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nhr[data-v-10c893f0] {              \n    background-color: white;\n    height: 0.5px;\n}\n.about-card[data-v-10c893f0] {\n    background: rgba(0,0,0,0.6);\n}\n.about-ul[data-v-10c893f0] { -webkit-text-decoration: underline #F76707; text-decoration: underline #F76707;\n}\n.dash-ul[data-v-10c893f0] { -webkit-text-decoration: underline red; text-decoration: underline red;\n}\n.inventory-ul[data-v-10c893f0] { -webkit-text-decoration: underline yellow; text-decoration: underline yellow;\n}\n.market-ul[data-v-10c893f0] { -webkit-text-decoration: underline blue; text-decoration: underline blue;\n}\n", ""]);
+exports.push([module.i, "\nhr[data-v-10c893f0] {              \n    background-color: white;\n    height: 0.5px;\n}\n.about-card[data-v-10c893f0] {\n    background: rgba(0,0,0,0.6);\n}\n.about-ul[data-v-10c893f0] { -webkit-text-decoration: underline #F76707; text-decoration: underline #F76707;\n}\n", ""]);
 
 // exports
 
@@ -52924,7 +52925,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "\n                            Fire Sight is an emergency response app where guests can register and login to report fires. \n                            Using the PHP framework Laravel and a Model View Controller approach (MVC) I have set up a system of authentication so that \n                            different types of users have access to different parts of the app. For instance an unregistered user can view sightings \n                            but only registered users are able to create posts. Although this project is mainly to demonstrate my capabilities with PHP and Laravel \n                            I am also using a Javascript library called "
+              "\n                            Fire Sight is an emergency response app where guests can register and login to report fires. \n                            Using the PHP framework Laravel and a Model View Controller approach (MVC) I have set up a system of authentication so that \n                            different types of users have access to different parts of the app. For instance an unregistered user can view sightings \n                            but only registered users are able to create posts. Although this project is mainly to demonstrate my capabilities with PHP and Laravel, \n                            I am also using a Javascript library called "
             ),
             _c("a", { attrs: { href: "https://leafletjs.com/index.html" } }, [
               _vm._v("Leaflets")
@@ -52961,17 +52962,17 @@ var staticRenderFns = [
       _c("div", { staticClass: "card text-white about-card" }, [
         _c("div", { staticClass: "card-body" }, [
           _c("h5", [
-            _c("u", { staticClass: "dash-ul" }, [_vm._v("Dashboard")])
+            _c("u", { staticClass: "about-ul" }, [_vm._v("Dashboard")])
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "\n                            The dashboard page is where the user can create new sightings or edit and delete previosly created ones.\n                        "
+              "\n                            For unrigestered users (guests) the dashboard is where you can either register yourself to become an authenticated user or login with your email and password. \n                            Once registered or logged in, users can then use the dashboard to report new sightings or edit and delete previosly created ones.\n                        "
             )
           ]),
           _vm._v(" "),
           _c("h5", [
-            _c("u", { staticClass: "inventory-ul" }, [_vm._v("Sightings")])
+            _c("u", { staticClass: "about-ul" }, [_vm._v("Sightings")])
           ]),
           _vm._v(" "),
           _c("p", [
