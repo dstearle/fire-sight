@@ -18,7 +18,9 @@
             <!-- Marker -->
             <l-marker 
                 ref="marker"
-                :lat-lng="[this.lat, this.lng]"
+                :lat-lng="[33.143976, -117.336785]" 
+                :draggable="true"
+                @dragend="onDragEnd"
             >
 
                 <!-- Icon -->
@@ -59,18 +61,16 @@
 
     },
 
-    props: ['lat', 'lng'],
-
     data() {
 
       return {
 
-        myIcon: require("./../../../public/storage/icons/flame-icon.png"),
+        myIcon: require("./../../../../public/storage/icons/flame-icon.png"),
 
         // Zoom out
-        zoom: 15,
+        zoom: 5,
         // Map location
-        center: latLng(this.lat, this.lng),
+        center: latLng(37.52732, -119.278882),
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution:
           '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -86,6 +86,21 @@
       };
 
     },
+
+    methods: {
+
+        // Retrieves the latitude and longitude of the marker when moved
+        onDragEnd(event) { 
+            
+            console.log(this.$refs.marker.mapObject.getLatLng());
+
+            document.getElementById('marker_latitude').value = this.$refs.marker.mapObject.getLatLng().lat;
+
+            document.getElementById('marker_longitude').value = this.$refs.marker.mapObject.getLatLng().lng;
+            
+        }
+
+    }
 
   };
 
