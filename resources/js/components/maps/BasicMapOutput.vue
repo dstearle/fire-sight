@@ -11,8 +11,8 @@
 
             <!-- Tile Layer -->
             <l-tile-layer
-            :url="url"
-            :attribution="attribution"
+				:url="url"
+				:attribution="attribution"
             />
 
             <!-- Marker -->
@@ -23,8 +23,8 @@
 
                 <!-- Icon -->
                 <l-icon
-                :icon-anchor="staticAnchor"
-                class-name="custom-div-icon"
+					:icon-anchor="staticAnchor"
+					class-name="custom-div-icon"
                 >
 
                     <div style='background-color:#f76707;' class='marker-pin'></div>

@@ -11,8 +11,8 @@
 
             <!-- Tile Layer -->
             <l-tile-layer
-            :url="url"
-            :attribution="attribution"
+				:url="url"
+				:attribution="attribution"
             />
 
             <!-- Marker -->
@@ -25,8 +25,8 @@
 
                 <!-- Icon -->
                 <l-icon
-                :icon-anchor="staticAnchor"
-                class-name="custom-div-icon"
+					:icon-anchor="staticAnchor"
+					class-name="custom-div-icon"
                 >
 
                     <div style='background-color:#f76707;' class='marker-pin'></div>
@@ -127,7 +127,6 @@
     width: 40px;
     height: 40px;
     border-radius: 50% 50% 50% 0;
-    background: #c30b82;
     position: absolute;
     transform: rotate(-45deg);
     left: 50%;

@@ -10,7 +10,10 @@
             <h1>{{ $post->title }}</h1>
 
             {{-- Leaflet Map --}}
-            <basic-map-output :lat="{{ $post->marker_latitude }}" :lng="{{ $post->marker_longitude }}"></basic-map-output>
+            <basic-map-output 
+                :lat="{{ $post->marker_latitude }}" 
+                :lng="{{ $post->marker_longitude }}" 
+            ></basic-map-output>
 
             {{-- Location --}}
             <h3>
