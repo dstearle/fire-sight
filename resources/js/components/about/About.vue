@@ -139,4 +139,15 @@
         background: rgba(0,0,0,0.6);
     }
     .about-ul { text-decoration: underline #F76707; }
+
+    a:link, a:visited {
+        color: white;
+        border-bottom-style: solid;
+        border-bottom-color: #F76707;
+    }
+
+    a:hover, a:active {
+        border-bottom: none;
+        text-decoration: none;
+    }
 </style>

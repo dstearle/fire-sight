@@ -6923,7 +6923,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nhr[data-v-10c893f0] {              \n    background-color: white;\n    height: 0.5px;\n}\n.about-card[data-v-10c893f0] {\n    background: rgba(0,0,0,0.6);\n}\n.about-ul[data-v-10c893f0] { -webkit-text-decoration: underline #F76707; text-decoration: underline #F76707;\n}\n", ""]);
+exports.push([module.i, "\nhr[data-v-10c893f0] {              \n    background-color: white;\n    height: 0.5px;\n}\n.about-card[data-v-10c893f0] {\n    background: rgba(0,0,0,0.6);\n}\n.about-ul[data-v-10c893f0] { -webkit-text-decoration: underline #F76707; text-decoration: underline #F76707;\n}\na[data-v-10c893f0]:link, a[data-v-10c893f0]:visited {\n    color: white;\n    border-bottom-style: solid;\n    border-bottom-color: #F76707;\n}\na[data-v-10c893f0]:hover, a[data-v-10c893f0]:active {\n    border-bottom: none;\n    text-decoration: none;\n}\n", ""]);
 
 // exports
 
