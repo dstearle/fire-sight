@@ -40,13 +40,13 @@ Vue.component('portfolio-card', require('./components/about/PortfolioCard.vue').
 // ****** Leaflet Maps ******
 
 // Basic Map Input Component
-Vue.component('basic-map-input', require('./components/BasicMapInput.vue').default);
+Vue.component('basic-map-input', require('./components/maps/BasicMapInput.vue').default);
 
 // Basic Map Output Component
-Vue.component('basic-map-output', require('./components/BasicMapOutput.vue').default);
+Vue.component('basic-map-output', require('./components/maps/BasicMapOutput.vue').default);
 
 // Multi Marker Output Component
-Vue.component('multi-marker-output', require('./components/MultiMarkerOutput.vue').default);
+Vue.component('multi-marker-output', require('./components/maps/MultiMarkerOutput.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -18,9 +18,10 @@
             <!-- Marker -->
             <l-marker 
                 ref="marker"
-                :lat-lng="[33.143976, -117.336785]" 
-                :draggable="true"
-                @dragend="onDragEnd"
+                v-for="post in postsGet"
+                :post="post"
+                v-bind:key="post.id" 
+                :lat-lng="[post.marker_latitude, post.marker_longitude]"
             >
 
                 <!-- Icon -->
@@ -61,11 +62,13 @@
 
     },
 
+    props: ['posts'],
+
     data() {
 
       return {
 
-        myIcon: require("./../../../public/storage/icons/flame-icon.png"),
+        myIcon: require("./../../../../public/storage/icons/flame-icon.png"),
 
         // Zoom out
         zoom: 5,
@@ -87,17 +90,13 @@
 
     },
 
-    methods: {
+    computed: {
 
-        // Retrieves the latitude and longitude of the marker when moved
-        onDragEnd(event) { 
-            
-            console.log(this.$refs.marker.mapObject.getLatLng());
+        postsGet() {
+           
+           let postsArray = this.posts;
+           return postsArray;
 
-            document.getElementById('marker_latitude').value = this.$refs.marker.mapObject.getLatLng().lat;
-
-            document.getElementById('marker_longitude').value = this.$refs.marker.mapObject.getLatLng().lng;
-            
         }
 
     }

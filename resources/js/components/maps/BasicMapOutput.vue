@@ -18,10 +18,7 @@
             <!-- Marker -->
             <l-marker 
                 ref="marker"
-                v-for="post in postsGet"
-                :post="post"
-                v-bind:key="post.id" 
-                :lat-lng="[post.marker_latitude, post.marker_longitude]"
+                :lat-lng="[this.lat, this.lng]"
             >
 
                 <!-- Icon -->
@@ -62,18 +59,18 @@
 
     },
 
-    props: ['posts'],
+    props: ['lat', 'lng'],
 
     data() {
 
       return {
 
-        myIcon: require("./../../../public/storage/icons/flame-icon.png"),
+        myIcon: require("./../../../../public/storage/icons/flame-icon.png"),
 
         // Zoom out
-        zoom: 5,
+        zoom: 15,
         // Map location
-        center: latLng(37.52732, -119.278882),
+        center: latLng(this.lat, this.lng),
         url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         attribution:
           '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -89,17 +86,6 @@
       };
 
     },
-
-    computed: {
-
-        postsGet() {
-           
-           let postsArray = this.posts;
-           return postsArray;
-
-        }
-
-    }
 
   };
 
