@@ -12,7 +12,7 @@
                 <!-- Welcome -->
                 <div class="my-5">
 
-                    <h1 class="text-white">Welcome To Fire Sight!</h1>
+                    <h1 class="text-black">Welcome To Fire Sight!</h1>
 
                     <hr class="my-3">
 
@@ -49,7 +49,7 @@
                 <!-- Page Descriptions -->
                 <div class="my-5">
 
-                    <h1 class="text-white">What Are The Functions For Each Page?</h1>
+                    <h1 class="text-black">What Are The Functions For Each Page?</h1>
 
                     <hr class="my-3">
 
@@ -85,7 +85,7 @@
                 <!-- Notable Features -->
                 <div class="my-5">
 
-                    <h1 class="text-white">Notable Features</h1>
+                    <h1 class="text-black">Notable Features</h1>
 
                     <hr class="my-3">
 

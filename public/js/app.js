@@ -52909,7 +52909,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "my-5" }, [
-      _c("h1", { staticClass: "text-white" }, [
+      _c("h1", { staticClass: "text-black" }, [
         _vm._v("Welcome To Fire Sight!")
       ]),
       _vm._v(" "),
@@ -52953,7 +52953,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "my-5" }, [
-      _c("h1", { staticClass: "text-white" }, [
+      _c("h1", { staticClass: "text-black" }, [
         _vm._v("What Are The Functions For Each Page?")
       ]),
       _vm._v(" "),
@@ -52989,7 +52989,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "my-5" }, [
-      _c("h1", { staticClass: "text-white" }, [_vm._v("Notable Features")]),
+      _c("h1", { staticClass: "text-black" }, [_vm._v("Notable Features")]),
       _vm._v(" "),
       _c("hr", { staticClass: "my-3" }),
       _vm._v(" "),
