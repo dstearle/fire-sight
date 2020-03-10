@@ -52809,44 +52809,53 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card leftRound bg-success text-white" }, [
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "row" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 col-lg-8" }, [
-            _c("h3", { staticClass: "d-none d-lg-block" }, [
-              _vm._v("More From The Developer")
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "card leftRound bg-success text-white" }, [
+        _c("div", { staticClass: "card-body" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-6 col-lg-4 align-self-center" }, [
+              _c("img", {
+                staticClass: "portfolio-avatar",
+                attrs: {
+                  src: __webpack_require__(/*! ./../../../../storage/app/public/dstearle.jpg */ "./storage/app/public/dstearle.jpg"),
+                  alt: "Portfolio Picture"
+                }
+              })
             ]),
             _vm._v(" "),
-            _c("h5", { staticClass: "d-block d-lg-none mt-3" }, [
-              _vm._v("More From The Developer")
-            ]),
-            _vm._v(" "),
-            _c("hr"),
-            _vm._v(" "),
-            _c("p", { staticClass: "d-none d-lg-block" }, [
-              _vm._v(
-                '\n                        Hi I\'m Dallas, the developer of "Fire Sight"!\n                        Interested in learning more about Fire Sight or seeing other projects I have worked on? \n                        This project along with many others can be found on my personal portfolio and github profile!\n                    '
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "row",
-                staticStyle: { padding: "0px 20px 0px 20px" }
-              },
-              [
-                _c(
-                  "strong",
-                  { staticClass: "my-3 col-md-12 col-lg-4" },
-                  [
-                    _c("font-awesome-icon", {
-                      staticClass: "text-white",
-                      attrs: { icon: "globe" }
-                    }),
+            _c("div", { staticClass: "col-md-6 col-lg-8" }, [
+              _c("h3", { staticClass: "d-none d-lg-block" }, [
+                _vm._v("More From The Developer")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticClass: "d-block d-lg-none mt-3" }, [
+                _vm._v("More From The Developer")
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("p", { staticClass: "d-none d-lg-block" }, [
+                _vm._v(
+                  '\n                        Hi I\'m Dallas, the developer of "Fire Sight"!\n                        Interested in learning more about Fire Sight or seeing other projects I have worked on? \n                        This project along with many others can be found on my personal portfolio and github profile!\n                    '
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "row",
+                  staticStyle: { padding: "0px 20px 0px 20px" }
+                },
+                [
+                  _c("strong", { staticClass: "my-3 col-md-12 col-lg-4" }, [
+                    _c("i", { staticClass: "fas fa-globe" }),
                     _vm._v(" "),
                     _c(
                       "a",
@@ -52856,18 +52865,10 @@ var render = function() {
                       },
                       [_vm._v("my portfolio")]
                     )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "strong",
-                  { staticClass: "my-3 col-md-12 col-lg-4" },
-                  [
-                    _c("font-awesome-icon", {
-                      staticClass: "text-white",
-                      attrs: { icon: "crown" }
-                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("strong", { staticClass: "my-3 col-md-12 col-lg-4" }, [
+                    _c("i", { staticClass: "fas fa-crown" }),
                     _vm._v(" "),
                     _c(
                       "a",
@@ -52879,18 +52880,10 @@ var render = function() {
                       },
                       [_vm._v("project repo")]
                     )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "strong",
-                  { staticClass: "mt-3 col-md-12 col-lg-4" },
-                  [
-                    _c("font-awesome-icon", {
-                      staticClass: "text-white",
-                      attrs: { icon: ["fab", "github-alt"] }
-                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("strong", { staticClass: "mt-3 col-md-12 col-lg-4" }, [
+                    _c("i", { staticClass: "fab fa-github-alt" }),
                     _vm._v(" "),
                     _c(
                       "a",
@@ -52900,30 +52893,13 @@ var render = function() {
                       },
                       [_vm._v("github profile")]
                     )
-                  ],
-                  1
-                )
-              ]
-            )
+                  ])
+                ]
+              )
+            ])
           ])
         ])
       ])
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-6 col-lg-4 align-self-center" }, [
-      _c("img", {
-        staticClass: "portfolio-avatar",
-        attrs: {
-          src: __webpack_require__(/*! ./../../../../storage/app/public/dstearle.jpg */ "./storage/app/public/dstearle.jpg"),
-          alt: "Portfolio Picture"
-        }
-      })
     ])
   }
 ]
