@@ -42,10 +42,7 @@
                             <!-- My Portfolio -->
                             <strong class="my-3 col-md-12 col-lg-4">
 
-                                <font-awesome-icon 
-                                    icon="globe" 
-                                    class="text-white"
-                                />
+                                <i class="fas fa-globe"></i>
 
                                 <a class="text-white pl-2" href="http://dstearle.com/">my portfolio</a>
 
@@ -54,10 +51,7 @@
                             <!-- Shrimp King Repo -->
                             <strong class="my-3 col-md-12 col-lg-4">
 
-                                <font-awesome-icon 
-                                    icon="crown" 
-                                    class="text-white"
-                                />
+                                <i class="fas fa-crown"></i>
 
                                 <a class="text-white pl-2" href="https://github.com/dstearle/fire-sight">project repo</a>
 
@@ -66,10 +60,7 @@
                             <!-- Github Repo -->
                             <strong class="mt-3 col-md-12 col-lg-4">
 
-                                <font-awesome-icon 
-                                    :icon="['fab', 'github-alt']" 
-                                    class="text-white"
-                                />
+                                <i class="fab fa-github-alt"></i>
 
                                 <a class="text-white pl-2" href="https://github.com/dstearle">github profile</a>
 
