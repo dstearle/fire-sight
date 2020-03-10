@@ -78,7 +78,7 @@
 
                 <div>
                     
-                    <small>{{ Form::radio('fire_status_button', 'Blaze') }} Wide Spread</small>
+                    <small>{{ Form::radio('fire_status_button', 'Wide-Spread') }} Wide-Spread</small>
 
                     <small>(Ex: a forest fire)</small>
                 
