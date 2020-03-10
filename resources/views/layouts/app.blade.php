@@ -37,6 +37,9 @@
                 
             </main>
 
+            {{-- Footer --}}
+            @include('inc.footer')
+
         </div> 
 
     </body>
