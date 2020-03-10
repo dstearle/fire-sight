@@ -11,8 +11,8 @@
 
             <!-- Tile Layer -->
             <l-tile-layer
-            :url="url"
-            :attribution="attribution"
+				:url="url"
+				:attribution="attribution"
             />
 
             <!-- Marker -->
@@ -26,11 +26,11 @@
 
                 <!-- Icon -->
                 <l-icon
-                :icon-anchor="staticAnchor"
-                class-name="custom-div-icon"
+					:icon-anchor="staticAnchor"
+					class-name="custom-div-icon"
                 >
 
-                    <div style='background-color:#f76707;' class='marker-pin'></div>
+                    <div :class='post.fire_status_button' class='marker-pin'></div>
                     
                     <img :src= myIcon class="my-auto">
 
@@ -126,7 +126,6 @@
     width: 40px;
     height: 40px;
     border-radius: 50% 50% 50% 0;
-    background: #c30b82;
     position: absolute;
     transform: rotate(-45deg);
     left: 50%;
@@ -158,5 +157,11 @@
   text-align: center;
 
 }
+
+.Smoke {    background: #A8A8A8 !important; }
+.Flame {    background: #ccff00 !important; }
+.Blaze {    background: #F76706 !important; }
+.wide_spread {    background: #cb4154 !important; }
+.Extinguished {    background: #36454f !important; }
 
 </style>

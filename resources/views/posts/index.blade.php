@@ -30,7 +30,10 @@
                         {{-- Leaflet Map --}}
                         <div class="col-md-6 col-lg-6">
 
-                            <basic-map-output style="height: 300px" :lat="{{ $post->marker_latitude }}" :lng="{{ $post->marker_longitude }}"></basic-map-output>
+                            <basic-map-output style="height: 300px" 
+                                :lat="{{ $post->marker_latitude }}" 
+                                :lng="{{ $post->marker_longitude }}"
+                            ></basic-map-output>
 
                         </div>
 

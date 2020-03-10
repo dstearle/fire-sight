@@ -6904,7 +6904,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.someExtraClass {\n\n    background-color: lightgreen;\n    padding: 10px;\n    border: 1px solid #333;\n    border-radius: 0 20px 20px 20px;\n    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);\n    text-align: center;\n    width: auto !important;\n    height: auto !important;\n    margin: 0 !important;\n}\n.marker-pin {\n\n    width: 40px;\n    height: 40px;\n    border-radius: 50% 50% 50% 0;\n    background: #c30b82;\n    position: absolute;\n    transform: rotate(-45deg);\n    left: 50%;\n    top: 50%;\n    margin: -15px 0 0 -15px;\n}\n.marker-pin::after {\n\n  content: '';\n  width: 30px;\n  height: 30px;\n  margin: 5px 0 0 5px;\n  background: #fff;\n  position: absolute;\n  border-radius: 50%;\n}\n.custom-div-icon img {\n\n  position: absolute;\n  width: 24px;\n  font-size: 22px;\n  left: 0;\n  right: 0;\n  margin: 10px auto;\n  text-align: center;\n}\n\n", ""]);
+exports.push([module.i, "\n.someExtraClass {\n\n    background-color: lightgreen;\n    padding: 10px;\n    border: 1px solid #333;\n    border-radius: 0 20px 20px 20px;\n    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);\n    text-align: center;\n    width: auto !important;\n    height: auto !important;\n    margin: 0 !important;\n}\n.marker-pin {\n\n    width: 40px;\n    height: 40px;\n    border-radius: 50% 50% 50% 0;\n    position: absolute;\n    transform: rotate(-45deg);\n    left: 50%;\n    top: 50%;\n    margin: -15px 0 0 -15px;\n}\n.marker-pin::after {\n\n  content: '';\n  width: 30px;\n  height: 30px;\n  margin: 5px 0 0 5px;\n  background: #fff;\n  position: absolute;\n  border-radius: 50%;\n}\n.custom-div-icon img {\n\n  position: absolute;\n  width: 24px;\n  font-size: 22px;\n  left: 0;\n  right: 0;\n  margin: 10px auto;\n  text-align: center;\n}\n\n", ""]);
 
 // exports
 
@@ -6942,7 +6942,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.someExtraClass {\n\n    background-color: lightgreen;\n    padding: 10px;\n    border: 1px solid #333;\n    border-radius: 0 20px 20px 20px;\n    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);\n    text-align: center;\n    width: auto !important;\n    height: auto !important;\n    margin: 0 !important;\n}\n.marker-pin {\n\n    width: 40px;\n    height: 40px;\n    border-radius: 50% 50% 50% 0;\n    background: #c30b82;\n    position: absolute;\n    transform: rotate(-45deg);\n    left: 50%;\n    top: 50%;\n    margin: -15px 0 0 -15px;\n}\n.marker-pin::after {\n\n  content: '';\n  width: 30px;\n  height: 30px;\n  margin: 5px 0 0 5px;\n  background: #fff;\n  position: absolute;\n  border-radius: 50%;\n}\n.custom-div-icon img {\n\n  position: absolute;\n  width: 24px;\n  font-size: 22px;\n  left: 0;\n  right: 0;\n  margin: 10px auto;\n  text-align: center;\n}\n\n", ""]);
+exports.push([module.i, "\n.someExtraClass {\n\n    background-color: lightgreen;\n    padding: 10px;\n    border: 1px solid #333;\n    border-radius: 0 20px 20px 20px;\n    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);\n    text-align: center;\n    width: auto !important;\n    height: auto !important;\n    margin: 0 !important;\n}\n.marker-pin {\n\n    width: 40px;\n    height: 40px;\n    border-radius: 50% 50% 50% 0;\n    position: absolute;\n    transform: rotate(-45deg);\n    left: 50%;\n    top: 50%;\n    margin: -15px 0 0 -15px;\n}\n.marker-pin::after {\n\n  content: '';\n  width: 30px;\n  height: 30px;\n  margin: 5px 0 0 5px;\n  background: #fff;\n  position: absolute;\n  border-radius: 50%;\n}\n.custom-div-icon img {\n\n  position: absolute;\n  width: 24px;\n  font-size: 22px;\n  left: 0;\n  right: 0;\n  margin: 10px auto;\n  text-align: center;\n}\n.Smoke {    background: #A8A8A8 !important;\n}\n.Flame {    background: #ccff00 !important;\n}\n.Blaze {    background: #F76706 !important;\n}\n.wide_spread {    background: #cb4154 !important;\n}\n.Extinguished {    background: #36454f !important;\n}\n\n", ""]);
 
 // exports
 
@@ -53109,7 +53109,7 @@ var render = function() {
                   [
                     _c("div", {
                       staticClass: "marker-pin",
-                      staticStyle: { "background-color": "#f76707" }
+                      class: post.fire_status_button
                     }),
                     _vm._v(" "),
                     _c("img", {
