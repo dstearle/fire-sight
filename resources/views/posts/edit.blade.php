@@ -32,7 +32,7 @@
         <div class="form-group">
 
             {{ Form::label('marker_latitude', 'Current Lattitude') }}
-            {{ Form::text('marker_latitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...']) }}
+            {{ Form::text('marker_latitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...', 'readonly']) }}
 
         </div>
 
@@ -40,7 +40,7 @@
         <div class="form-group">
 
             {{ Form::label('marker_longitude', 'Current Longitude') }}
-            {{ Form::text('marker_longitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...']) }}
+            {{ Form::text('marker_longitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...','readonly']) }}
 
         </div>
 
