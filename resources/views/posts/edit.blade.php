@@ -94,6 +94,26 @@
 
         </div>
 
+        {{-- Marker Icon --}}
+        <div class="form-group">
+
+            {{ Form::label('marker_icon', 'Marker Icon') }}
+
+            {{-- Icon Options --}}
+            <div class="ml-3">
+
+                <div><small>{{ Form::radio('marker_icon', 'flame-icon.png') }} Flame</small></div>
+
+                <div><small>{{ Form::radio('marker_icon', 'burning-car.png') }} Burning Car</small></div>
+                
+                <div><small>{{ Form::radio('marker_icon', 'burning-house.png') }} Burning House</small></div>
+
+                <div><small>{{ Form::radio('marker_icon', 'fire-risk.png') }} Forest Fire</small></div>
+
+            </div>
+
+        </div>
+
         {{-- Authority Status --}}
         <div class="form-group">
 

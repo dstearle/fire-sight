@@ -169,6 +169,7 @@ class PostsController extends Controller
             'marker_latitude' => 'required',
             'marker_longitude' => 'required',
             'fire_status_button' => 'required',
+            'marker_icon' => 'required',
             'auth_status_button' => 'required',
             'body' => 'required'
 
@@ -203,6 +204,7 @@ class PostsController extends Controller
         $post->marker_latitude = $request->input('marker_latitude');
         $post->marker_longitude = $request->input('marker_longitude');
         $post->fire_status_button = $request->input('fire_status_button');
+        $post->marker_icon = $request->input('marker_icon');
         $post->auth_status_button = $request->input('auth_status_button');
         $post->body = $request->input('body');
         // Checks to see if a new image has been uploaded
