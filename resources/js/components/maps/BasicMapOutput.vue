@@ -59,13 +59,13 @@
 
     },
 
-    props: ['lat', 'lng', 'fire_status'],
+    props: ['lat', 'lng', 'fire_status', 'icon'],
 
     data() {
 
       return {
 
-        myIcon: require("./../../../../public/storage/icons/flame-icon.png"),
+        myIcon: require("./../../../../public/storage/icons/" + this.icon),
 
         // Zoom out
         zoom: 15,

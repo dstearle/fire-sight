@@ -2201,10 +2201,10 @@ __webpack_require__.r(__webpack_exports__);
     LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LMarker"],
     LIcon: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LIcon"]
   },
-  props: ['lat', 'lng', 'fire_status'],
+  props: ['lat', 'lng', 'fire_status', 'icon'],
   data: function data() {
     return {
-      myIcon: __webpack_require__(/*! ./../../../../public/storage/icons/flame-icon.png */ "./storage/app/public/icons/flame-icon.png"),
+      myIcon: __webpack_require__("./public/storage/icons sync recursive ^\\.\\/.*$")("./" + this.icon),
       // Zoom out
       zoom: 15,
       // Map location
@@ -77567,6 +77567,42 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./public/storage/icons sync recursive ^\\.\\/.*$":
+/*!********************************************!*\
+  !*** ./public/storage/icons sync ^\.\/.*$ ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./burning-car.png": "./storage/app/public/icons/burning-car.png",
+	"./burning-house.png": "./storage/app/public/icons/burning-house.png",
+	"./fire-risk.png": "./storage/app/public/icons/fire-risk.png",
+	"./flame-icon.png": "./storage/app/public/icons/flame-icon.png"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./public/storage/icons sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -78111,6 +78147,39 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 module.exports = "/images/dstearle.jpg?dea88a56856fe4bf3e0c454e38c927fd";
+
+/***/ }),
+
+/***/ "./storage/app/public/icons/burning-car.png":
+/*!**************************************************!*\
+  !*** ./storage/app/public/icons/burning-car.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/burning-car.png?44032f324c79e63396d169400b3212f9";
+
+/***/ }),
+
+/***/ "./storage/app/public/icons/burning-house.png":
+/*!****************************************************!*\
+  !*** ./storage/app/public/icons/burning-house.png ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/burning-house.png?2c4cc1363b35eb41de70b5cf9fcbb9be";
+
+/***/ }),
+
+/***/ "./storage/app/public/icons/fire-risk.png":
+/*!************************************************!*\
+  !*** ./storage/app/public/icons/fire-risk.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/fire-risk.png?90dd842b14b069584063faeb58c4c7b9";
 
 /***/ }),
 

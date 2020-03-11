@@ -14,6 +14,7 @@
                 :lat="{{ $post->marker_latitude }}" 
                 :lng="{{ $post->marker_longitude }}" 
                 :fire_status="{{ json_encode($post->fire_status_button ) }}"
+                :icon="{{ json_encode($post->marker_icon ) }}"
             ></basic-map-output>
 
             {{-- Location --}}
