@@ -27,7 +27,7 @@
 					class-name="custom-div-icon"
                 >
 
-                    <div style='background-color:#f76707;' class='marker-pin'></div>
+                    <div :class="this.fire_status" class='marker-pin'></div>
                     
                     <img :src= myIcon class="my-auto">
 
@@ -59,7 +59,7 @@
 
     },
 
-    props: ['lat', 'lng'],
+    props: ['lat', 'lng', 'fire_status'],
 
     data() {
 
@@ -85,7 +85,7 @@
 
       };
 
-    },
+	},
 
   };
 
@@ -93,26 +93,11 @@
 
 <style>
 
-  .someExtraClass {
-
-    background-color: lightgreen;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 0 20px 20px 20px;
-    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: auto !important;
-    height: auto !important;
-    margin: 0 !important;
-
-  }
-
   .marker-pin {
 
     width: 40px;
     height: 40px;
     border-radius: 50% 50% 50% 0;
-    background: #c30b82;
     position: absolute;
     transform: rotate(-45deg);
     left: 50%;
@@ -144,5 +129,11 @@
   text-align: center;
 
 }
+
+.Smoke { background: #A8A8A8 !important; }
+.Flame { background: #ccff00 !important; }
+.Blaze { background: #F76706 !important; }
+.Wide-Spread { background: #cb4154 !important; }
+.Extinguished { background: #36454f !important; }
 
 </style>

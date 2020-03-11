@@ -32,7 +32,8 @@
 
                             <basic-map-output style="height: 300px" 
                                 :lat="{{ $post->marker_latitude }}" 
-                                :lng="{{ $post->marker_longitude }}"
+                                :lng="{{ $post->marker_longitude }}" 
+                                :fire_status="{{ json_encode($post->fire_status_button ) }}"
                             ></basic-map-output>
 
                         </div>
