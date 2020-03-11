@@ -107,20 +107,6 @@
 
 <style>
 
-  .someExtraClass {
-
-    background-color: lightgreen;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 0 20px 20px 20px;
-    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: auto !important;
-    height: auto !important;
-    margin: 0 !important;
-
-  }
-
   .marker-pin {
 
     width: 40px;
@@ -161,7 +147,7 @@
 .Smoke {    background: #A8A8A8 !important; }
 .Flame {    background: #ccff00 !important; }
 .Blaze {    background: #F76706 !important; }
-.wide_spread {    background: #cb4154 !important; }
+.Wide-Spread {    background: #cb4154 !important; }
 .Extinguished {    background: #36454f !important; }
 
 </style>
