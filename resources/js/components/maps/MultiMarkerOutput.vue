@@ -32,7 +32,7 @@
 
                     <div :class='post.fire_status_button' class='marker-pin'></div>
                     
-                    <img :src= myIcon class="my-auto">
+                    <img :src='require("./../../../../public/storage/icons/" + post.marker_icon)' class="my-auto">
 
                 </l-icon>
 
@@ -68,7 +68,7 @@
 
       return {
 
-        myIcon: require("./../../../../public/storage/icons/flame-icon.png"),
+        // myIcon: require("./../../../../public/storage/icons/" + post.marker_icon),
 
         // Zoom out
         zoom: 5,

@@ -2296,7 +2296,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['posts'],
   data: function data() {
     return {
-      myIcon: __webpack_require__(/*! ./../../../../public/storage/icons/flame-icon.png */ "./storage/app/public/icons/flame-icon.png"),
+      // myIcon: require("./../../../../public/storage/icons/" + post.marker_icon),
       // Zoom out
       zoom: 5,
       // Map location
@@ -53114,7 +53114,10 @@ var render = function() {
                     _vm._v(" "),
                     _c("img", {
                       staticClass: "my-auto",
-                      attrs: { src: _vm.myIcon }
+                      attrs: {
+                        src: __webpack_require__("./public/storage/icons sync recursive ^\\.\\/.*$")("./" +
+                          post.marker_icon)
+                      }
                     })
                   ]
                 )
