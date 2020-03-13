@@ -26,13 +26,17 @@
         </div>
 
         {{-- Leaflet Map --}}
-        <basic-map-input class="form-group"></basic-map-input>
+        <basic-map-input 
+            class="form-group" 
+            :lat='{{ old("marker_latitude", $post->marker_latitude) }}' 
+            :lng='{{ old("marker_longitude", $post->marker_longitude) }}'
+        ></basic-map-input>
 
         {{-- Current Lattitude --}}
         <div class="form-group">
 
             {{ Form::label('marker_latitude', 'Current Lattitude') }}
-            {{ Form::text('marker_latitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...', 'readonly']) }}
+            {{ Form::text('marker_latitude', old("marker_latitude", $post->marker_latitude), ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...', 'readonly']) }}
 
         </div>
 
@@ -40,7 +44,7 @@
         <div class="form-group">
 
             {{ Form::label('marker_longitude', 'Current Longitude') }}
-            {{ Form::text('marker_longitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...','readonly']) }}
+            {{ Form::text('marker_longitude', old("marker_longitude", $post->marker_longitude), ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...','readonly']) }}
 
         </div>
 

@@ -2105,6 +2105,7 @@ __webpack_require__.r(__webpack_exports__);
     LMarker: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LMarker"],
     LIcon: vue2_leaflet__WEBPACK_IMPORTED_MODULE_0__["LIcon"]
   },
+  props: ['lat', 'lng'],
   data: function data() {
     return {
       myIcon: __webpack_require__(/*! ./../../../../public/storage/icons/flame-icon.png */ "./storage/app/public/icons/flame-icon.png"),
@@ -52942,7 +52943,7 @@ var render = function() {
             "l-marker",
             {
               ref: "marker",
-              attrs: { "lat-lng": [33.143976, -117.336785], draggable: true },
+              attrs: { "lat-lng": [this.lat, this.lng], draggable: true },
               on: { dragend: _vm.onDragEnd }
             },
             [
