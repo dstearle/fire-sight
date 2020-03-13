@@ -141,11 +141,11 @@
         </div>
 
         {{-- Upload Image --}}
-        <div class="form-group">
+        {{-- <div class="form-group">
 
             {{ Form::file('cover_image') }}
 
-        </div>
+        </div> --}}
 
         {{-- Submit Button --}}
         {{ Form::submit('Submit', ['class' => 'btn btn-lg btn-secondary mb-5']) }}

@@ -141,11 +141,11 @@
         </div>
 
         {{-- Upload Image --}}
-        <div class="form-group">
+        {{-- <div class="form-group">
 
             {{ Form::file('cover_image') }}
 
-        </div>
+        </div> --}}
 
         {{ Form::hidden('_method', 'PUT') }}
 
