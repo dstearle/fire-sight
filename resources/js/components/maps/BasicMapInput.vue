@@ -18,7 +18,7 @@
             <!-- Marker -->
             <l-marker 
                 ref="marker"
-                :lat-lng="[33.143976, -117.336785]" 
+                :lat-lng="[this.lat, this.lng]" 
                 :draggable="true"
                 @dragend="onDragEnd"
             >
@@ -60,6 +60,8 @@
       LIcon,
 
     },
+
+	props: ['lat', 'lng'],
 
     data() {
 
