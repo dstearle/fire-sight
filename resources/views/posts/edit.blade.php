@@ -26,11 +26,11 @@
         </div>
 
         {{-- Leaflet Map --}}
-        <basic-map-input 
+        <basic-map-edit 
             class="form-group" 
             :lat='{{ old("marker_latitude", $post->marker_latitude) }}' 
             :lng='{{ old("marker_longitude", $post->marker_longitude) }}'
-        ></basic-map-input>
+        ></basic-map-edit>
 
         {{-- Current Lattitude --}}
         <div class="form-group">

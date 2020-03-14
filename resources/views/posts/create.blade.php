@@ -26,7 +26,7 @@
         </div>
 
         {{-- Leaflet Map --}}
-        <basic-map-input class="form-group"></basic-map-input>
+        <basic-map-create class="form-group"></basic-map-create>
 
         {{-- Current Lattitude --}}
         <div class="form-group">
