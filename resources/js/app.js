@@ -39,8 +39,11 @@ Vue.component('portfolio-card', require('./components/about/PortfolioCard.vue').
 
 // ****** Leaflet Maps ******
 
-// Basic Map Input Component
-Vue.component('basic-map-input', require('./components/maps/BasicMapInput.vue').default);
+// Basic Map Create Component
+Vue.component('basic-map-create', require('./components/maps/BasicMapCreate.vue').default);
+
+// Basic Map Edit Component
+Vue.component('basic-map-edit', require('./components/maps/BasicMapEdit.vue').default);
 
 // Basic Map Output Component
 Vue.component('basic-map-output', require('./components/maps/BasicMapOutput.vue').default);
