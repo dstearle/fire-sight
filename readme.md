@@ -60,5 +60,5 @@ Leaflet Maps:
 
 **Dependencies:**
 
-- Laravel
-- Leaflets
+- Leaflets: https://leafletjs.com/index.html
+- Vue2-Leaflets: https://vue2-leaflet.netlify.com/
