@@ -12,16 +12,16 @@
         {{-- Post Title --}}
         <div class="form-group">
 
-            {{ Form::label('title', 'Title') }}
-            {{ Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title']) }}
+            {{ Form::label('title', 'Title', ['class' => ' '.($errors->has('title') ? 'text-danger':'')]) }}
+            {{ Form::text('title', '', ['class' => 'form-control '.($errors->has('title') ? 'is-invalid':''), 'placeholder' => 'Title']) }}
 
         </div>
 
         {{-- Location --}}
         <div class="form-group">
 
-            {{ Form::label('location', 'Location') }}
-            {{ Form::text('location', '', ['class' => 'form-control', 'placeholder' => 'Location']) }}
+            {{ Form::label('location', 'Location', ['class' => ' '.($errors->has('location') ? 'text-danger':'')]) }}
+            {{ Form::text('location', '', ['class' => 'form-control '.($errors->has('location') ? 'is-invalid':''), 'placeholder' => 'Location']) }}
 
         </div>
 
@@ -31,23 +31,23 @@
         {{-- Current Lattitude --}}
         <div class="form-group">
 
-            {{ Form::label('marker_latitude', 'Current Lattitude') }}
-            {{ Form::text('marker_latitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...', 'readonly']) }}
+            {{ Form::label('marker_latitude', 'Current Lattitude', ['class' => ' '.($errors->has('marker_latitude') ? 'text-danger':'')]) }}
+            {{ Form::text('marker_latitude', '', ['class' => 'form-control '.($errors->has('marker_latitude') ? 'is-invalid':''), 'placeholder' => 'Move the marker on the map...', 'readonly']) }}
 
         </div>
 
         {{-- Current Longitude --}}
         <div class="form-group">
 
-            {{ Form::label('marker_longitude', 'Current Longitude') }}
-            {{ Form::text('marker_longitude', '', ['class' => 'form-control', 'placeholder' => 'Move the marker on the map...', 'readonly']) }}
+            {{ Form::label('marker_longitude', 'Current Longitude', ['class' => ' '.($errors->has('marker_longitude') ? 'text-danger':'')]) }}
+            {{ Form::text('marker_longitude', '', ['class' => 'form-control '.($errors->has('marker_longitude') ? 'is-invalid':''), 'placeholder' => 'Move the marker on the map...', 'readonly']) }}
 
         </div>
 
         {{-- Fire Status --}}
         <div class="form-group">
 
-            {{ Form::label('fire_status', 'Fire Status') }}
+            {{ Form::label('fire_status', 'Fire Status', ['class' => ' '.($errors->has('fire_status_button') ? 'text-danger':'')]) }}
 
             {{-- Status Options --}}
             <div class="ml-3">
@@ -97,7 +97,7 @@
         {{-- Marker Icon --}}
         <div class="form-group">
 
-            {{ Form::label('marker_icon', 'Marker Icon') }}
+            {{ Form::label('marker_icon', 'Marker Icon', ['class' => ' '.($errors->has('marker_icon') ? 'text-danger':'')]) }}
 
             {{-- Icon Options --}}
             <div class="ml-3">
@@ -117,7 +117,7 @@
         {{-- Authority Status --}}
         <div class="form-group">
 
-            {{ Form::label('auth_status', 'Authority Status') }}
+            {{ Form::label('auth_status', 'Authority Status', ['class' => ' '.($errors->has('auth_status_button') ? 'text-danger':'')]) }}
 
             {{-- Status Options --}}
             <div class="ml-3">
@@ -135,8 +135,8 @@
         {{-- Text Area For Body --}}
         <div class="form-group">
 
-            {{ Form::label('body', 'Body') }}
-            {{ Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Body Text']) }}
+            {{ Form::label('body', 'Body', ['class' => ' '.($errors->has('body') ? 'text-danger':'')]) }}
+            {{ Form::textarea('body', '', ['class' => 'form-control '.($errors->has('body') ? 'is-invalid':''), 'placeholder' => 'Body Text']) }}
 
         </div>
 
