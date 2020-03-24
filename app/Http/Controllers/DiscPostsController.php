@@ -52,7 +52,7 @@ class DiscPostsController extends Controller
             
             ['user_id' => \Auth::id()]);
 
-        return back()->with("success", "Your post has been submitted successfully");
+        return back()->with("success", "Your discussion post has been submitted successfully! Nice!");
     }
 
     /**
@@ -108,7 +108,7 @@ class DiscPostsController extends Controller
 
         ]));
 
-        return redirect('/posts')->with('success', 'Post Updated');
+        return redirect('/posts')->with('success', 'Your discussion post has been updated!');
     }
 
     /**
