@@ -2,6 +2,9 @@
 
 @section('content')
 
+    {{-- Success & Error Messages --}}
+    @include('inc.messages')
+
     {{-- Title --}}
     <h1>Sightings</h1>
 
