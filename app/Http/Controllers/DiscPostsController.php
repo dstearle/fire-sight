@@ -52,7 +52,7 @@ class DiscPostsController extends Controller
             
             ['user_id' => \Auth::id()]);
 
-        return back()->with("success", "Your discussion post has been submitted successfully! Nice!");
+        return back()->with("success", "Your discussion post has been successfully submitted!");
     }
 
     /**

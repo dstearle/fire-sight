@@ -111,7 +111,7 @@ class PostsController extends Controller
         // Saves the post
         $post->save();
 
-        return redirect('/posts')->with('success', 'Post Created');
+        return redirect('/posts')->with('success', 'Your fire sighting has been successfully submitted!');
     }
 
     /**
@@ -215,7 +215,7 @@ class PostsController extends Controller
         };
         $post->save();
 
-        return redirect('/posts')->with('success', 'Post Updated');
+        return redirect('/posts')->with('success', 'Your sighting has been updated!');
     }
 
     /**
@@ -247,6 +247,6 @@ class PostsController extends Controller
         // Deletes the post
         $post->delete();
 
-        return redirect('/posts')->with('success', 'Post Deleted');
+        return redirect('/posts')->with('success', 'Your sighting has been removed');
     }
 }
